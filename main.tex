@@ -1,0 +1,35 @@
+% !Mode:: "TeX:UTF-8"
+
+\documentclass[openany]{scuthesis}
+% chapc : Centering Chapter (chapl)
+% openany : no openright    (openright)
+% oneside : (twosiede)
+% noabstract : no abstract  (abstract)
+
+\usepackage{scuthesis}
+\input{chapters/basic}
+
+\begin{document}
+\frontmatter
+\include{chapters/prologue}
+
+\mainmatter
+\include{chapters/chap01}
+\include{chapters/chap02}
+\include{chapters/chap03}
+
+\backmatter
+% \listoffigures % 图清单
+% \listoftables  % 表清单
+
+% 参考文献
+\bibliographystyle{scuthesis}
+\bibliography{refs}
+% 致谢
+\include{chapters/epilogue}
+\begin{appendix}
+  \input{chapters/appendix01}
+  \input{chapters/appendix02}
+  \input{chapters/appendix03}
+\end{appendix}
+\end{document}
