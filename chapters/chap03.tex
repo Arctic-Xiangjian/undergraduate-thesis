@@ -1,7 +1,7 @@
 \chapter{反德西特时空下的黑洞}
 \section{德西特时空和反德西特时空}
 \section{莱斯纳-努德斯特伦解}
-史瓦西时空描述的为真空静态球对称星体外部的时空，其带电推广为莱斯纳-努德斯特伦时空。相较于史瓦西时空，它存在多个黑洞视界，存在着类时的奇点\citep{陈斌2018广义相对论}。
+史瓦西时空描述的为真空静态球对称星体外部的时空，其带电推广为莱斯纳-努德斯特伦时空。相较于史瓦西时空，它存在多个黑洞视界，存在着类时的奇点。
 
 带电球对称星体外的作用量可以写为：
 \begin{equation}
@@ -13,5 +13,13 @@
 \end{equation}
 其中
 \begin{equation}
-    T^{\left(F\right)}_{\mu \nu}=\frac{1}{4\pi}
+    T^{\left(F\right)}_{\mu \nu}=\frac{1}{4\pi}\left(F_{\mu \rho }F\indices{_{\nu}^{\rho}}-\frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} \right)
+\end{equation}
+由此，我们可以得到莱斯纳-努德斯特伦度规\citep{陈斌2018广义相对论}
+\begin{equation}\label{eq: RNmetric}
+     ds^2=-\left(1-\frac{2M}{r}+\frac{Q^2}{r^2}\right)dt^2+\left(1-\frac{2M}{r}+\frac{Q^2}{r^2}\right)^{-1}dr^2+r^2\left(d\theta^2+\sin ^2 \theta d\phi^2\right)
+\end{equation}
+它描述了静态球对称带电荷星体的外部时空，同史瓦西解类似，我们希望能够描述整个时空的情况。除了$r=0$这一个时空奇性以外，若$1-2M / r+Q^2 / r^2=0$有解，那么还有其他奇性存在。简单求解发现$r$值满足
+\begin{equation}\label{eq: RNhorizon}
+    r_{\pm}=M \pm \sqrt{M^2-Q^2}
 \end{equation}
