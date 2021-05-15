@@ -1,5 +1,8 @@
 \chapter{反德西特时空下的黑洞}
 \section{德西特时空和反德西特时空}
+\subsection{常曲率空间}
+\subsection{德西特时空}
+\subsection{反德西特时空}
 \section{莱斯纳-努德斯特伦解}
 史瓦西时空描述的为真空静态球对称星体外部的时空，其带电推广为莱斯纳-努德斯特伦时空。相较于史瓦西时空，它存在多个黑洞视界，存在着类时的奇点。
 
@@ -19,13 +22,47 @@
 \begin{equation}\label{eq: RNmetric}
      ds^2=-\left(1-\frac{2M}{r}+\frac{Q^2}{r^2}\right)dt^2+\left(1-\frac{2M}{r}+\frac{Q^2}{r^2}\right)^{-1}dr^2+r^2\left(d\theta^2+\sin ^2 \theta d\phi^2\right)
 \end{equation}
-它描述了静态球对称带电荷星体的外部时空，同史瓦西解类似，我们希望能够描述整个时空的情况。除了$r=0$这一个时空奇性以外，若$1-2M / r+Q^2 / r^2=0$有解，那么还有其他奇性存在。简单求解发现$r$值满足
+它描述了静态球对称带电荷星体的外部时空，同史瓦西解类似，莱斯纳-努德斯特伦解是爱因斯坦-麦克斯韦理论的唯一球对称解。当$Q=P=0$，既电荷和磁荷都为零时，莱斯纳-努德斯特伦解退化为史瓦西解。
+
+如果要描述整个时空的情况，除了$r=0$这一个时空奇性以外，若$1-2M / r+Q^2 / r^2=0$有解，那么还有其他奇性存在。简单求解发现$r$值满足
 \begin{equation}\label{eq: RNhorizon}
     r_{\pm}=M \pm \sqrt{M^2-Q^2}
 \end{equation}
 根据解的形式，分三种情况讨论
 \begin{enumerate}
-    \item 若$M^2<Q^2$，此时$r$无实数值，这种情况下莱斯纳-努德斯特伦时空只有一个奇性$r=0$；
-    \item 若$M^2>Q^2$，此时除$r=0$以外，$r_{\pm}$也为奇性，它们为坐标奇性\citep{梁灿彬2006微分几何入门与广义相对论}；
+    \item 若$M^2<Q^2$，此时$r$无实数值，这种情况下莱斯纳-努德斯特伦时空只有一个奇性$r=0$，在此情况下莱斯纳-努德斯特伦黑洞也不能存在；
+    \item 若$M^2>Q^2$，此时除$r=0$以外，$r_{\pm}$也为奇性，它们为坐标奇性\citep{梁灿彬2006微分几何入门与广义相对论}，$r_+$被称为外视界，$r_-$被称为内视界。在外视界$r_+$以外，均有球对称性，存在类时的基灵矢量；
     \item 若$M^2=Q^2$，此时上述两个奇性合二为一，这种情况被称为极端莱斯纳-努德斯特伦黑洞。第二章所提到的Wald的测试粒子方法\citep{wald1974gedanken}，所采用的就是此种情况下的莱斯纳-努德斯特伦黑洞来验证弱宇宙监督假设。
 \end{enumerate}
+\subsection{反德西特时空下的莱斯纳-努德斯特伦黑洞}
+式\eqref{eq: RNmetric}给出了常曲率空间下的莱斯纳-努德斯特伦黑洞的度规。在反德西特时空中，莱斯纳-努德斯特伦黑洞的度规为
+\begin{equation}\label{eq: RN-AdSmetric}
+    ds^2=-f\left(r\right)dt^2+\frac{1}{f\left(r\right)}dr^2+r^2\left(d\theta^2+\sin^2\phi\right)
+\end{equation}
+其中$f\left(r\right)$
+\begin{equation}\label{eq: f(r)}
+    f\left(r\right)=1-\frac{2M}{r}+\frac{Q^2}{r^2}+\frac{r^2}{l^2}
+\end{equation}
+其中$l$反德西特半径，它和宇宙学常数的关系为$\Lambda=-3/l^2$，参数$M$和$Q$，可以被理解为黑洞的质量和黑洞携带和电荷。
+规范势可以写为
+\begin{equation}\label{eq: vectorpotion}
+    A=A_t\left(r\right)dt=-\frac{Q}{r}dt
+\end{equation}
+
+采用测试粒子的方法来验证对于反德西特时空下的莱斯纳-努德斯特伦黑洞弱宇宙监督假设是否成立，首先需要根据反德西特时空下的莱斯纳-努德斯特伦黑洞的度规式\eqref{eq: RN-AdSmetric}，来讨论出极端反德西特时空下的莱斯纳-努德斯特伦黑洞的视界半径，此时令$ f(r)=0 $，会发现和常曲率空间下的莱斯纳-努德斯特伦黑洞不同的是，由于$r^2/l^2$这一项的存在，$ f(r)=0 $事实上为四次方程，这将带来四个根的存在。这并不说明反德西特时空下的莱斯纳-努德斯特伦黑洞存在四个视界半径，通过讨论发现，其中两根的值为虚数没有物理意义。德西特时空下的莱斯纳-努德斯特伦黑洞的视界半径为
+\begin{align}
+    r_+=r + r_* \label{eq: rnr+} \\
+    r_-=r-r_* \label{eq: rnr-} 
+\end{align}
+其中
+\begin{align*}
+    &r = \frac{1}{2} \gamma \\
+    &r_* = \frac{1}{2} \sqrt{(\frac{4 l^2
+    M}{\gamma}-\gamma^2-\frac{2 l^2}{3})}  \\
+    &\alpha,\ \beta,\ \gamma \text{的值分别为} \\
+    &\alpha =12 l^2 Q^2+l^4 \\ 
+    &\beta =2 l^6 + 108 l^4 M^2 - 72 l^4 Q^2 \\
+    &\gamma = \sqrt{\frac{\sqrt[3]{\sqrt{\beta^2-4 \alpha^3}+\beta}}{3\sqrt[3]{2}}+\frac{\sqrt[3]{2} \alpha}{3 \sqrt[3]{\sqrt{\beta^2-4\alpha^3}+\beta}}-\frac{2 l^2}{3}} 
+\end{align*}
+\subsubsection{极端黑洞情况}
+观察解的形式发现，对比常曲率空间下的莱斯纳-努德斯特伦黑洞
