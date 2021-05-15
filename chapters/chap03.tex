@@ -35,9 +35,13 @@
     \item 若$M^2=Q^2$，此时上述两个奇性合二为一，这种情况被称为极端莱斯纳-努德斯特伦黑洞。第二章所提到的Wald的测试粒子方法\citep{wald1974gedanken}，所采用的就是此种情况下的莱斯纳-努德斯特伦黑洞来验证弱宇宙监督假设。
 \end{enumerate}
 \subsection{反德西特时空下的莱斯纳-努德斯特伦黑洞}
-式\eqref{eq: RNmetric}给出了常曲率空间下的莱斯纳-努德斯特伦黑洞的度规。在反德西特时空中，莱斯纳-努德斯特伦黑洞的度规为
+式\eqref{eq: RNmetric}给出了零曲率空间下的莱斯纳-努德斯特伦黑洞的度规。在反德西特时空中，莱斯纳-努德斯特伦黑洞的度规为
 \begin{equation}\label{eq: RN-AdSmetric}
-    ds^2=-f\left(r\right)dt^2+\frac{1}{f\left(r\right)}dr^2+r^2\left(d\theta^2+\sin^2\phi\right)
+    ds^2=-f\left(r\right)dt^2+\frac{1}{f\left(r\right)}dr^2+r^2\left(d\theta^2+\sin^2\phi d\phi ^2\right)
+\end{equation}
+度规的逆
+\begin{equation}\label{eq: RN-AdSinversmetric}
+    \left(\frac{\partial }{\partial s}\right)^2=-\frac{1}{f\left(r\right)}\left(\frac{\partial }{\partial t}\right)^2+f\left(r\right)\left(\frac{\partial }{\partial r}\right)^2+\frac{1}{r^2}\left(\left(\frac{\partial }{\partial \theta}\right)^2+\frac{1}{\sin ^2 \phi}\left(\frac{\partial }{\partial \phi}\right)^2\right)
 \end{equation}
 其中$f\left(r\right)$
 \begin{equation}\label{eq: f(r)}
@@ -65,7 +69,48 @@
     &\gamma = \sqrt{\frac{\sqrt[3]{\sqrt{\beta^2-4 \alpha^3}+\beta}}{3\sqrt[3]{2}}+\frac{\sqrt[3]{2} \alpha}{3 \sqrt[3]{\sqrt{\beta^2-4\alpha^3}+\beta}}-\frac{2 l^2}{3}} 
 \end{align*}
 \subsubsection{反德西特时空下的莱斯纳-努德斯特伦黑洞存在条件}
-观察解的形式发现，对比常曲率空间下的莱斯纳-努德斯特伦黑洞，得到反德西特时空下的极端莱斯纳-努德斯特伦黑洞为$r_+=r_-$，反德西特时空下的莱斯纳-努德斯特伦黑洞存在条件应为
+观察解的形式发现，对比零曲率空间下的莱斯纳-努德斯特伦黑洞，得到反德西特时空下的极端莱斯纳-努德斯特伦黑洞为$r_+=r_-$，反德西特时空下的莱斯纳-努德斯特伦黑洞存在条件应为
 \begin{equation}\label{eq: rnadsconuneq}
     \beta^2-4\alpha^3 \geq 0
 \end{equation}
+求解式\eqref{eq: rnadsconuneq}，得到关于质量参数$M$、电荷参数$Q$和反德西特半径$l$的关系式\eqref{eq: rnadscondition}
+\begin{equation}\label{eq: rnadscondition}
+    M \geq \frac{\sqrt{\delta } (\delta +3) l}{3 \sqrt{6}} \qquad\qquad  \delta= \sqrt{\frac{12 Q^2}{l^2}+1}-1 
+\end{equation}
+还需要式\eqref{eq: rnadscondition}使得式\eqref{eq: suibian}得到满足
+\begin{equation}\label{eq: suibian}
+    \frac{\sqrt[3]{\sqrt{\beta^2-4 \alpha^3}+\beta}}{3\sqrt[3]{2}}+\frac{\sqrt[3]{2} \alpha}{3 \sqrt[3]{\sqrt{\beta^2-4\alpha^3}+\beta}}-\frac{2 l^2}{3} \geq 0
+\end{equation}
+简单计算验证，发现式\eqref{eq: suibian}得到满足。
+
+以上的讨论是为了获得在反德西特时空下的极端莱斯纳-努德斯特伦黑洞的信息，通过比较前文中零曲率空间下的莱斯纳-努德斯特伦黑洞，我们可以知道反德西特时空下的极端莱斯纳-努德斯特伦黑洞的视界半径，将式\eqref{eq: rnadsconofmass}代入式\eqref{eq: rnr+}和式\eqref{eq: rnr-}
+\begin{equation}\label{eq: rnadsconofmass}
+    M=\frac{\sqrt{\delta } (\delta +3) l}{3 \sqrt{6}}
+\end{equation}
+反德西特时空下的极端莱斯纳-努德斯特伦黑洞的视界半径为
+\begin{equation}\label{eq: rnadshorizonex}
+    r=r_+=r_-=l\sqrt{\frac{\delta}{6}} 
+\end{equation}
+
+尝试创造一个违反式\eqref{eq: rnadscondition}的时空，通过想黑洞中丢入一个满足特殊条件的粒子，可以让式\eqref{eq: rnadscondition}取等号。假设此黑洞捕获了一个有着能量$E$，电荷为$e$，无自旋的粒子。因此，最后的物体具有电荷$\left(e+Q\right)$，质量不大于$\left(m+E\right)$。测试粒子需要满足$e\ll Q$，$E\ll M$的条件。简单计算得出，若末态时空不能保持为反德西特时空下的极端莱斯纳-努德斯特伦时空，那么式\eqref{eq: rnadscondition}成为
+\begin{equation}\label{eq: rnadstestcon}
+    M+E < \frac{\sqrt{\delta } (\delta +3) l}{3 \sqrt{6}} \quad\quad\quad\quad  \delta= \sqrt{\frac{12 \left(Q+e\right)^2}{l^2}+1}-1
+\end{equation}
+由于$e\ll Q$，$E\ll M$，式\eqref{eq: rnadstestcon}平方，泰勒展开，得到如果测试粒子破坏反德西特时空下的极端莱斯纳-努德斯特伦黑洞$E$需要满足的条件
+\begin{equation}\label{eq: rnadsdiscon}
+    E < \frac{Q e \left(3+\delta\right)}{3M} \qquad\qquad  \delta= \sqrt{\frac{12 Q^2}{l^2}+1}-1
+\end{equation}
+
+本次思想实验的目标就是，尝试让黑洞捕获一个满足式\eqref{eq: rnadsdiscon}条件的小物体。如此，最终的时空必然会出现违反弱宇宙监督假设的情况\citep{wald1974gedanken}。
+\subsubsection{测试粒子的轨道}
+Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{carter1968global}。有着静止质量$M$和电荷$Q$的带电粒子的运动方程为
+\begin{equation}
+    \frac{D^2x^\mu}{D s^2}=\frac{d^2x^\mu}{ds^2}+\Gamma^{\mu}_{\rho\sigma }\frac{dx^\rho}{ds}\frac{dx^\sigma}{ds}=\frac{e}{m}F^{\mu\nu }\frac{dx_\nu}{ds}
+\end{equation}
+粒子的能量$E$和沿对称轴的角动量$L$分量由以下给出，由Wald的方法\cite{wald1974gedanken}，根据式（）
+\begin{align}
+    -E&=p_t=\frac{\partial \mathcal{L}}{\partial \dot{t}}=Mg_{tt}\frac{dx^t}{ds}+QA_t \\
+    L&=p_\phi=\frac{\partial \mathcal{L}}{\partial \dot{\phi}}=0
+\end{align}
+
+在之前的讨论中，我们现在试图找到一个可以进入反德西特时空下的极端莱斯纳-努德斯特伦黑洞的粒子轨道，并且满足式\eqref{eq: rnadsdiscon}的条件。
