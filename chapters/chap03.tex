@@ -41,7 +41,7 @@
 \end{equation}
 度规的逆
 \begin{equation}\label{eq: RN-AdSinversmetric}
-    \left(\frac{\partial }{\partial s}\right)^2=-\frac{1}{f\left(r\right)}\left(\frac{\partial }{\partial t}\right)^2+f\left(r\right)\left(\frac{\partial }{\partial r}\right)^2+\frac{1}{r^2}\left(\left(\frac{\partial }{\partial \theta}\right)^2+\frac{1}{\sin ^2 \phi}\left(\frac{\partial }{\partial \phi}\right)^2\right)
+    \left(\frac{\partial }{\partial s}\right)^2=-\frac{1}{f\left(r\right)}\left(\frac{\partial }{\partial t}\right)^2+f\left(r\right)\left(\frac{\partial }{\partial r}\right)^2+\frac{1}{r^2}\left[\left(\frac{\partial }{\partial \theta}\right)^2+\frac{1}{\sin ^2 \phi}\left(\frac{\partial }{\partial \phi}\right)^2\right]
 \end{equation}
 其中$f\left(r\right)$
 \begin{equation}\label{eq: f(r)}
@@ -93,7 +93,7 @@
     r=r_+=r_-=l\sqrt{\frac{\delta}{6}} 
 \end{equation}
 
-尝试创造一个违反式\eqref{eq: rnadscondition}的时空，通过想黑洞中丢入一个满足特殊条件的粒子，可以让式\eqref{eq: rnadscondition}取等号。假设此黑洞捕获了一个有着能量$E$，电荷为$e$，无自旋的粒子。因此，最后的物体具有电荷$\left(e+Q\right)$，质量不大于$\left(m+E\right)$。测试粒子需要满足$e\ll Q$，$E\ll M$的条件。简单计算得出，若末态时空不能保持为反德西特时空下的极端莱斯纳-努德斯特伦时空，那么式\eqref{eq: rnadscondition}成为
+尝试创造一个违反式\eqref{eq: rnadscondition}的时空，通过向黑洞中丢入一个满足特殊条件的粒子，可以让式\eqref{eq: rnadscondition}取等号。假设此黑洞捕获了一个有着能量$E$，电荷为$e$，无自旋的粒子。因此，最后的物体具有电荷$\left(e+Q\right)$，质量不大于$\left(m+E\right)$。测试粒子需要满足$e\ll Q$，$E\ll M$的条件。简单计算得出，若末态时空不能保持为反德西特时空下的极端莱斯纳-努德斯特伦时空，那么式\eqref{eq: rnadscondition}成为
 \begin{equation}\label{eq: rnadstestcon}
     M+E < \frac{\sqrt{\delta } (\delta +3) l}{3 \sqrt{6}} \quad\quad\quad\quad  \delta= \sqrt{\frac{12 \left(Q+e\right)^2}{l^2}+1}-1
 \end{equation}
@@ -193,8 +193,45 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
 \section{反德西特时空下的双曲带电黑洞}
 式\eqref{eq: general}给出了，反德西特时空下的双曲带电黑洞的度规。取$k=-1$后，度规为
 \begin{equation}
-    ds^2=-f\left(r\right)dt^2+\frac{1}{f\left(\right)}
+    ds^2=-f\left(r\right)dt^2+\frac{1}{f\left(r\right)}dr^2+r^2d\Sigma^2_2
+\end{equation}
+度规的逆为
+\begin{equation}
+    \left(\frac{\partial }{\partial s}\right)^2=-\frac{1}{f\left(r\right)}\left(\frac{\partial }{\partial t}\right)^2+f\left(r\right)\left(\frac{\partial }{\partial r}\right)^2+\frac{1}{r^2}\left[\left(\frac{\partial }{\partial \theta}\right)^2+\frac{1}{\sinh ^2 \phi}\left(\frac{\partial }{\partial \phi}\right)^2\right]
+\end{equation}
+其中
+\begin{equation}
+    f\left(r\right)=-1-\frac{2m}{r}-\frac{\Lambda r^2}{3}+\frac{Q^2}{r^2}
+\end{equation}
+和反德西特时空下的莱斯纳-努德斯特伦黑洞相似（参见式\eqref{eq: RN-AdSmetric}），参数$m$和$Q$被理解为黑洞的质量参数和电荷参数。经过同样的讨论我们可以得出来反德西特时空下的双曲带电黑洞的视界半径，依然舍去两个虚数的解，保留有物理意义的实数解。
+\begin{align}
+    r_+=r + r_* \label{eq: hyr+} \\
+    r_-=r-r_* \label{eq: hyr-} 
+\end{align}
+其中
+\begin{align*}
+    r=&\frac{1}{2}\sqrt{-\frac{2}{\Lambda}-\frac{3 \times 2^{\frac{1}{3}}\alpha}{\Lambda \left(\beta+\sqrt{\beta^2-4 (9\alpha)^3} \right)^{\frac{1}{3}}}-\frac{1}{3 \times 2^{\frac{1}{3}}\Lambda}\left(\beta +\sqrt{\beta^2-4 \left(9\alpha\right)^3}\right)^{\frac{1}{3}}} \\
+    r_*=&\frac{1}{2}\sqrt{-\frac{12m}{\Lambda \sqrt{-\frac{2}{\Lambda}-\frac{3 \times 2^{\frac{1}{3}} \alpha}{\Lambda \left(\beta+\sqrt{\beta^2 - 4 (9\alpha)^3}\right)^{\frac{1}{3}}}-\frac{1}{3\times 2^{\frac{1}{3}}}\left(\beta+\sqrt{\beta^2-4(9 \alpha)^3}\right)^{\frac{1}{3}}}}} \notag \\
+    &\overline{+\frac{3 \times 2^{\frac{1}{3}}\alpha}{\Lambda \left(\beta+\sqrt{\beta^2-4 (9\alpha)^3} \right)^{\frac{1}{3}}}+\frac{1}{3 \times 2^{\frac{1}{3}}\Lambda}\left(\beta +\sqrt{\beta^2-4 \left(9\alpha\right)^3}\right)^{\frac{1}{3}}-\frac{4}{\Lambda}} \\
+    &\alpha,\ \beta,\ \gamma \text{的值分别为} \notag \\
+    \alpha =& 1-4\Lambda  Q^2    \notag \\
+    \beta =&-972 \Lambda  m^2-648 \Lambda Q^2-54 \notag 
+\end{align*}
+
+采用与前一节相同的办法，首先找到反德西特时空下的双曲带电黑洞的存在条件，通过让其捕获测试粒子来尝试得到“裸奇点”，从而得到违反弱宇宙监督假设的结果。德西特时空下的双曲带电黑洞的存在条件应为
+\begin{equation}\label{eq: hycon}
+    \beta^2-4 \left(9\alpha\right)^3 \geq 0
+\end{equation}
+求解式\eqref{eq: hycon}，得到关于质量参数$M$、电荷参数$Q$和宇宙学常数$\Lambda$的关系式\eqref{eq: hyadscondition}
+\begin{equation}\label{eq: hyadscondition}
+    m \geq -\frac{1}{12} \Lambda  \sqrt{-\frac{2}{\Lambda }-\frac{2 \sqrt{1-4 \Lambda  Q^2}}{\Lambda }} \left(\frac{4}{\Lambda }-\frac{2 \sqrt{1-4 \Lambda 
+    Q^2}}{\Lambda }\right)
+\end{equation}
+如果取$Q=0$会发现此时的结果和表\ref{tab: hyadswithoutcharge}的视界半径一致。把宇宙学常数$\Lambda$换成反德西特半径$l$，这样可以和反德西特时空下的莱斯纳-努德斯特伦黑洞对比。
+\begin{equation}\label{eq: hyadsconditionreal}
+    m\geq \frac{l\left(\delta-3\right)\sqrt{\delta}}{3\sqrt{6}} \qquad \qquad \delta=\sqrt{1+12Q^2/l^2}+1
 \end{equation}
 
+对于反德西特时空下的莱斯纳-努德斯特伦黑洞，此时我们可以计算出黑洞捕获测试粒子后可以使得末态时空被违反的条件式\eqref{eq: rnadsdiscon}，但是考虑到在反德西特空间下双曲带电黑洞的负质量情况令人担忧，因为没有理由要求式\eqref{eq: hyadscondition} $\left(4/\Lambda -2 \sqrt{1-4 \Lambda Q^2}/\Lambda \right)$这一项始终大于零，那么负质量情况的讨论就不可避免，接下来的两节将分别讨论黑洞的质量参数$m$大于零和小于零的两种情况，最后我们发现即使一开始不区分情况讨论，只对过程中不等号的方向有影响，而对最终的结论并无影响。
 \subsection{正质量情况}
-此时我们考虑正质量情况，若
+此时我们考虑正质量情况，通过向黑洞中丢入一个满足特殊条件的粒子，可以让式\eqref{eq: hyadsconditionreal}取等号。假设此黑洞捕获了一个有着能量$E$，电荷为$e$，无自旋的粒子。因此，最后的物体具有电荷$\left(e+Q\right)$，质量不大于$\left(m+E\right)$。测试粒子需要满足$e\ll Q$，$E\ll m$的条件。简单计算得出，若末态时空不能保持为反德西特时空下的极端双曲黑洞，那么式\eqref{eq: hyadsconditionreal}成为
