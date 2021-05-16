@@ -68,7 +68,8 @@
     &\beta =2 l^6 + 108 l^4 M^2 - 72 l^4 Q^2 \\
     &\gamma = \sqrt{\frac{\sqrt[3]{\sqrt{\beta^2-4 \alpha^3}+\beta}}{3\sqrt[3]{2}}+\frac{\sqrt[3]{2} \alpha}{3 \sqrt[3]{\sqrt{\beta^2-4\alpha^3}+\beta}}-\frac{2 l^2}{3}} 
 \end{align*}
-\subsubsection{反德西特时空下的莱斯纳-努德斯特伦黑洞存在条件}
+
+\subsection{反德西特时空下的莱斯纳-努德斯特伦黑洞存在条件}
 观察解的形式发现，对比零曲率空间下的莱斯纳-努德斯特伦黑洞，得到反德西特时空下的极端莱斯纳-努德斯特伦黑洞为$r_+=r_-$，反德西特时空下的莱斯纳-努德斯特伦黑洞存在条件应为
 \begin{equation}\label{eq: rnadsconuneq}
     \beta^2-4\alpha^3 \geq 0
@@ -102,7 +103,7 @@
 \end{equation}
 
 本次思想实验的目标就是，尝试让黑洞捕获一个满足式\eqref{eq: rnadsdiscon}条件的小物体。如此，最终的时空必然会出现违反弱宇宙监督假设的情况\citep{wald1974gedanken}。
-\subsubsection{测试粒子的轨道}
+\subsection{测试粒子的轨道}
 Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{carter1968global}。有着静止质量$M$和电荷$Q$的带电粒子的运动方程为
 \begin{equation}
     \frac{D^2x^\mu}{D s^2}=\frac{d^2x^\mu}{ds^2}+\Gamma^{\mu}_{\rho\sigma }\frac{dx^\rho}{ds}\frac{dx^\sigma}{ds}=\frac{e}{m}F^{\mu\nu }\frac{dx_\nu}{ds}
@@ -132,4 +133,21 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
     E> \frac{Qe\left(3+\delta\right)}{3M} \qquad\qquad  \delta= \sqrt{\frac{12 Q^2}{l^2}+1}-1
 \end{equation}
 任何可以进入黑洞的粒子必循满足式\eqref{eq: rnadsinter}，从而式\eqref{eq: rnadsdiscon}被违背。保证了违反弱宇宙监督假设的情况不能获得。
-\section{反德西特时空下的双曲黑洞}
+
+\section{反德西特时空下的双曲带电黑洞}
+类似于莱斯纳-努德斯特伦黑洞，双曲黑洞也属于克尔-纽曼黑洞中的一员，反德西特时空下的双曲带电黑洞和反德西特时空下的莱斯纳-努德斯特伦黑洞的度规非常相似，见下式
+\begin{align}\label{eq: general}
+    ds^2=&-\left(k-\frac{8\pi M}{\omega_2 r}+\frac{16 \pi^2 Q^2}{\omega_2^2r^2}+\frac{r^2}{l^2}\right)dt^2 \notag \\
+    &+\left(k-\frac{8\pi M}{\omega_2 r}+\frac{16\pi^2 Q^2}{w_2^2 r^2}+\frac{r^2}{l^2}\right)^{-1}dr^2+r^2d\Sigma_2^2
+\end{align}
+其中，$Q$和$M$为黑洞的电荷与质量，$\omega_2$为视界边界超曲面$\Sigma_2$的的面积。$d\Sigma_2^2$为曲率为常数$2k$二维超曲面$\Sigma_2$的线元；
+\begin{equation}\label{eqs: differentsituation}
+    d\Sigma^2_2=\begin{cases}
+        d\theta^2+\sin ^2 \theta d\phi^2 \qquad \text{对于} \quad k=1, \\
+        d\theta^2+ \theta^2 d\phi^2 \qquad \text{对于} \quad k=0, \\
+        d\theta^2+\sinh ^2 \theta d\phi^2 \qquad \text{对于} \quad k=-1.
+    \end{cases}
+\end{equation}
+在式\eqref{eqs: differentsituation}中，使用了事件视界的二维超曲面的常曲率分别为$1$, $0$和$-1$的坐标，这种做法依然保留了一般性。并且在$k=1$的情况下，式\eqref{eq: general}变成了反德西特时空下的莱斯纳-努德斯特伦黑洞，事件视界为$S^2$。视界边界为双曲面$T^2$在$k=-1$的时候，有趣的是即使质量$M$为负数的时候，依然存在视界边界，这种负质量黑洞可以在正常的引力坍缩中形成\citep{mann1997black,smith1997formation}。这种负质量情况会带来很多有意思的情况，但是对于采用测试粒子验证弱宇宙监督假设，我们通过分情况讨论发现，在此情况下不需要特别关注负质量情况。
+
+\subsection{反德西特时空下的双曲黑洞}
