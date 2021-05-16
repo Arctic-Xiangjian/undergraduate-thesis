@@ -203,6 +203,10 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
 \begin{equation}
     f\left(r\right)=-1-\frac{2m}{r}-\frac{\Lambda r^2}{3}+\frac{Q^2}{r^2}
 \end{equation}
+规范势为
+\begin{equation}
+    A=A_t\left(r\right)dt=-\frac{Q}{r}dt
+\end{equation}
 和反德西特时空下的莱斯纳-努德斯特伦黑洞相似（参见式\eqref{eq: RN-AdSmetric}），参数$m$和$Q$被理解为黑洞的质量参数和电荷参数。经过同样的讨论我们可以得出来反德西特时空下的双曲带电黑洞的视界半径，依然舍去两个虚数的解，保留有物理意义的实数解。
 \begin{align}
     r_+=r + r_* \label{eq: hyr+} \\
@@ -232,6 +236,35 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
     m\geq \frac{l\left(\delta-3\right)\sqrt{\delta}}{3\sqrt{6}} \qquad \qquad \delta=\sqrt{1+12Q^2/l^2}+1
 \end{equation}
 
+再次情况下，我们也可以得出反德西特空间下极端双曲带电黑洞的视界半径为
+\begin{equation}\label{eq: hyadsextramhorizon}
+    r=r_+=r_-=\sqrt{\frac{\delta}{6}}l
+\end{equation}
+
 对于反德西特时空下的莱斯纳-努德斯特伦黑洞，此时我们可以计算出黑洞捕获测试粒子后可以使得末态时空被违反的条件式\eqref{eq: rnadsdiscon}，但是考虑到在反德西特空间下双曲带电黑洞的负质量情况令人担忧，因为没有理由要求式\eqref{eq: hyadscondition} $\left(4/\Lambda -2 \sqrt{1-4 \Lambda Q^2}/\Lambda \right)$这一项始终大于零，那么负质量情况的讨论就不可避免，接下来的两节将分别讨论黑洞的质量参数$m$大于零和小于零的两种情况，最后我们发现即使一开始不区分情况讨论，只对过程中不等号的方向有影响，而对最终的结论并无影响。
 \subsection{正质量情况}
 此时我们考虑正质量情况，通过向黑洞中丢入一个满足特殊条件的粒子，可以让式\eqref{eq: hyadsconditionreal}取等号。假设此黑洞捕获了一个有着能量$E$，电荷为$e$，无自旋的粒子。因此，最后的物体具有电荷$\left(e+Q\right)$，质量不大于$\left(m+E\right)$。测试粒子需要满足$e\ll Q$，$E\ll m$的条件。简单计算得出，若末态时空不能保持为反德西特时空下的极端双曲黑洞，那么式\eqref{eq: hyadsconditionreal}成为
+\begin{equation}\label{eq: hyadsputtestparticle}
+    m+E < \frac{\sqrt{\delta } (\delta -3) l}{3 \sqrt{6}} \quad\quad\quad\quad  \delta= \sqrt{\frac{12 \left(Q+e\right)^2}{l^2}+1}+1
+\end{equation}
+不等式两端平方以后，再取泰勒展开只保留一阶项。那么可以得到
+\begin{equation}\label{eq: hyadsdiscon}
+    E < \frac{Q e \left(\delta-3\right)}{3 m} \qquad \qquad \delta=\sqrt{1+12Q^2/l^2}+1
+\end{equation}
+
+粒子的轨道根据式（第二章搞进去），其方程和式\eqref{eq: xiaren}相同，同样由于$dt/ds>0$，和时间的方向性，我们可以得到
+\begin{equation}\label{eq: hyadstestcon}
+    E>-eA_t=\frac{eQ}{r}
+\end{equation}
+将式\eqref{eq: hyadsextramhorizon}和式\eqref{eq: hyadsconditionreal}取等号，代入式\eqref{eq: hyadstestcon}中，可以得到
+\begin{equation}\label{eq: woshizaibuzhidaogaogeshale}
+    E > e\frac{Q}{r}=\frac{Q e \left(\delta-3\right)}{3 m} 
+\end{equation}
+对比式\eqref{eq: woshizaibuzhidaogaogeshale}和式\eqref{eq: hyadsdiscon}，任何可以进入黑洞的粒子就不能满足摧毁黑洞时空的条件，由此弱宇宙监督假设再次得到了保证。
+\subsection{负质量情况}
+对于负质量情况，首先需要明确的问题为黑洞捕获了测试粒子以后的质量不大于$m+E$，是否依然不大于零。很显然如果大于零的话，$E \ll m$的条件就不能得到满足。第二个为题在于对式\eqref{eq: hyadsputtestparticle}进行平方操作后不等号会反向。但是由于泰勒展开后存在$E m $项，不等号会再次反向。综上所述，在采用测试粒子验证弱宇宙监督假设的情况下，特别考虑负质量问题并无必要。
+
+\section{本章小结}
+本章通过使黑洞捕获一个小物体来创造出一个“裸奇点”的情况，通过测地线方程在并没有真实求解粒子运动轨道的情况下讨论了可以被黑洞捕获小物体的能量和电荷条件，由于静电斥力，可以破坏极端黑洞的粒子都不满足这个条件。
+
+尽管我们可以任意的接近极端黑洞的情况但永远不能进入，测试粒子总会“错过”黑洞。
