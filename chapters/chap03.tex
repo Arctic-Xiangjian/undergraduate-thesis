@@ -1,10 +1,31 @@
 \chapter{反德西特时空下的黑洞}
 反德西特空间中的黑洞与渐进平坦和德西特空间中的黑洞有很多不同之处，比如在渐进平坦和德西特空间中，四维黑洞的视界拓扑一定是一个球体$S_2$\citep{friedman1993topological}。在反德西特空间，黑洞视界也有可能有着零或者负曲率\citep{cai2004thermodynamics}。
 
-因为B人们对反德西特时空中的黑洞非常感兴趣，
+因为巴纳多斯-泰特尔鲍姆-加扎内利黑洞\citep{banados1992black}的发现，人们对反德西特时空中的黑洞产生了兴趣，巴纳多斯-泰特尔鲍姆-加扎内利黑洞是具有负宇宙学常数的三维爱因斯坦引力的精确解\citep{cai1999topological}。
+
 \section{德西特时空和反德西特时空}
+德西特时空和反德西特时空都是最大对称空间，都只有一个时间方向，曲率分别为正和负。可以看作球面和双曲面在赝黎曼时空流形中的推广\citep{陈斌2018广义相对论}。对于$n$维最大对称时空，有
+\begin{equation}\label{eq: changqulvdugui}
+    R_{\mu \nu \sigma \rho}=K\left(g_{\mu \sigma}g_{\nu \rho}-g_{\mu \rho}g_{\nu \sigma}\right)
+\end{equation}
+其中
+\begin{equation}
+    K=\frac{R}{n \left(n-1\right)} \qquad \qquad K g_{\mu \nu}=\frac{R_{\mu \nu}}{n-1}
+\end{equation}
 \subsection{常曲率空间}
+一些定义对我们理解常曲率空间是什么非常有必要\citep{梁灿彬2006微分几何入门与广义相对论}：
+\begin{enumerate}
+    \item 满足式\eqref{eq: changqulvdugui}的度规$g_{\mu \nu}$，被称为常曲率度规；
+    \item 若度规$g_{\mu \nu}$，被称为常曲率度规，广义黎曼空间$\left(M,g_{\mu \nu}\right)$被称为常曲率空间；
+    \item 当满足如下条件时候，广义黎曼空间$\left(M,g_{\mu \nu}\right)$与$\left(M',g'_{\mu \nu}\right)$被称为有相同局域几何的。
+    \begin{enumerate}
+        \item $\forall p \in M, \exists p$的邻域$O\subset M$和开子集$O'\subset M'$ 以及微分同胚$\phi: O\rightarrow O'$，满足$\phi_* \left(g_{\mu \nu} |  _O\right)=g'_{\mu \nu}| _{O'}$；
+        \item $\forall p' \in M', \exists p'$的邻域$O'\subset M'$和开子集$O\subset M$ 以及微分同胚$\phi': O'\rightarrow O$，满足$\phi_*' \left(g'_{\mu \nu} |_{O'}\right)=g_{\mu \nu}| _O$。
+    \end{enumerate}
+\end{enumerate}
+很容易证明，流形维数、度规号差及$k$值相同的两个常曲率空间有相同的局域几何，并且常曲率空间有最高对称性\citep{梁灿彬2006微分几何入门与广义相对论}。如此我们可以按照标量曲率$R$来对给定维数和号差的常曲率度规分类。$R=0$的常曲率度规就是平直度规。在$n=4$的洛伦兹号差的前提下，$R>0$和$R<0$的常曲率度规非别为德西特度规和反德西特度规。
 \subsection{德西特时空}
+通过将$4$维的的西特时空嵌入到一个$5$维的闵氏时空中可以诱导出德西特度规，其为$4$维旋转双曲面$M^4$。参数为$l$的德西特度规可以看为宇宙学常数$\Lambda=3l^{-2}$的真空爱因斯坦方程的解。其中$l>0$为任一正实数。式\eqref{eq: changqulvdugui}中的$K=l^{-2}$。
 \subsection{反德西特时空}
 \section{莱斯纳-努德斯特伦解}
 史瓦西时空描述的为真空静态球对称星体外部的时空，其带电推广为莱斯纳-努德斯特伦时空。相较于史瓦西时空，它存在多个黑洞视界，存在着类时的奇点。
