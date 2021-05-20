@@ -1,27 +1,26 @@
-\chapter{四维时空的高斯-博尼特引力}
-在接近低能量极限的时候，弦理论产生了高维引力模型，其中包含了高阶曲率项。洛夫洛克定理认为，爱因斯坦的广义相对论是满足以下条件的唯一的引力理论\citep{lanczos1938remarkable,lovelock1971einstein,lovelock1972four}
+\section{四维爱因斯坦-高斯-博尼特引力}
+弦理论的低能有效理论，其中包含了高阶曲率项。洛夫洛克定理认为，爱因斯坦的广义相对论是满足以下条件的唯一的引力理论\citep{lanczos1938remarkable,lovelock1971einstein,lovelock1972four}
 \begin{enumerate}
     \item 有着$3+1$维时空；
-    \item 微分同态不变性；
+    \item 微分同胚不变性；
     \item 可度量；
-    \item 运动学第二定律。
+    \item 运动方程为二阶。
 \end{enumerate}
 
-但是最近Lin和Glavan的一项工作，找到了一个新的四维时空引力理论，被称为“四维爱因斯坦高斯-博尼特引力（4D Einstein Gauss-Bonnet gravity）”，同样满足了以上的条件\citep{glavan2020einstein}，一般认为四维时空中高斯-博尼特引力是平凡的，但是Lin通过使用$\alpha\rightarrow \alpha/\left(D-4\right)$，将四维时空定义为$D\rightarrow 4$，从而消去了$\left(D-4\right)$这一因子。
+但是最近Lin和Glavan的一项工作，找到了一个新的四维时空引力理论，被称为“四维爱因斯坦-高斯-博尼特引力（4D Einstein Gauss-Bonnet gravity）”，同样满足了以上的条件\citep{glavan2020einstein}。一般认为四维时空中高斯-博尼特引力是平凡的，但是Lin et al通过使用$\alpha\rightarrow \alpha/\left(D-4\right)$，将四维时空定义为$D\rightarrow 4$，从而在运动方程中消去了$\left(D-4\right)$这一因子。
 \begin{align}
-    S_{EH}\left[g_{\mu \nu}\right]&=\int d^D x \sqrt{-g}\left[\frac{M_P^2}{2}R-\Lambda_0\right] \\
-    S_{GB}\left[g_{\mu \nu}\right]&=\int d^Dx\sqrt{-g}\alpha \mathcal{G} \\
     \alpha&\rightarrow \alpha/\left(D-4\right) \label{eq: tihuan} \\
     S=S_{EH}+S_{GB}\left[g_{\mu \nu}\right]&=\int d^Dx\sqrt{-g} \left[\frac{M_P^2}{2}R-\Lambda_0+\frac{\alpha}{D-4}\mathcal{G}\right] \\
     \frac{g_{\nu \rho}}{\sqrt{-g}}\frac{\delta S_{GB}}{\delta g_{\mu \rho}}&=\frac{\alpha}{D-4} \times \frac{\left(D-2\right)\left(D-3\right)\left(D-4\right)}{2\left(D-1\right)M_P^4}\times \Lambda^2 \delta^\mu_\nu \label{eq: gbgdelta}
 \end{align}
-可以看到通过式\eqref{eq: tihuan}的替换过程，成功得到了式\eqref{eq: gbgdelta}。但也有评论称这种方法只是在代数上解决了问题，经不起深入分析并且也不物理\citep{gurses2020comment}。
-\section{反德西特时空下的带电黑洞}
+其中$\mathcal{G}=6R\indices{^{\mu \nu}_{\rho \sigma}}R\indices{^{\rho \sigma}_{\mu \nu}}-4R\indices{^{\mu}_{\nu}}R\indices{^{\nu}_{\mu}}+R^2=6R\indices{^{\mu \nu}_{[\mu \nu}}R\indices{^{\rho \sigma}_{\rho \sigma]}}$
+可以看到通过式\eqref{eq: tihuan}的替换过程，成功得到了式\eqref{eq: gbgdelta}，即GB项对运动方程有非平凡的贡献。但也有评论称这种方法只是在代数上解决了问题，经不起深入分析并且也不物理\footnote[1]{test}。
+\subsection{反德西特时空下的带电黑洞}
 即便有一些反对意见，我们依然能讨论在四维时空的高斯-博尼特引力下反德西特时空中带电黑洞是否满足弱宇宙监督假设。Fernandes给出了这种情况下黑洞的视界半径为式\eqref{eq: gbadsrfun}的解\citep{fernandes2020charged}
 \begin{equation}\label{eq: gbadsrfun}
     1-\frac{2M}{r}+\frac{Q^2+\alpha}{r^2}+\frac{r^2}{l^2}=0
 \end{equation}
-若采用$Q^2+\alpha \rightarrow \tilde{Q}^2 $，将$\tilde{Q}$作为电荷参数，那么此时情况回归反德西特时空下的莱斯纳-努德斯特伦黑洞。此时通过式\eqref{eq: rnadsguidao}，我们再次回到了熟悉的反德西特时空下的莱斯纳-努德斯特伦黑洞情况。
+若采用$Q^2+\alpha \rightarrow \tilde{Q}^2 $，将$\tilde{Q}$作为电荷参数，那么此时情况回归反德西特时空下的RN黑洞。此时通过式\eqref{eq: rnadsguidao}，我们再次回到了熟悉的反德西特时空下的RN黑洞情况。
 
 \section{本章小结}
-本章再次采用测试粒子的办法来验证对于四维时空下爱因斯坦引力的拓展高斯-博尼特引力下的反德西特时空中带电黑洞情况的一种进行了验证，发现即便引力理论经过了拓展，对于可以破坏时空的测试粒子因为静电斥力从而不能进入黑洞的情况并无影响，弱宇宙监督假设依然可靠。
+本章再次采用测试粒子的办法来验证对于四维爱因斯坦-高斯-博尼特引力中一种进行了验证，发现即便引力理论经过了拓展，对于可以破坏时空的测试粒子因为静电斥力从而不能进入黑洞的情况并无影响，弱宇宙监督假设依然可靠。

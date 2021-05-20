@@ -1,7 +1,5 @@
-\chapter{反德西特时空下的黑洞}
-反德西特空间中的黑洞与渐进平坦和德西特空间中的黑洞有很多不同之处，比如在渐进平坦和德西特空间中，四维黑洞的视界拓扑一定是一个球体$S_2$\citep{friedman1993topological}。在反德西特空间，黑洞视界也有可能有着零或者负曲率\citep{cai2004thermodynamics}。
-
-因为巴纳多斯-泰特尔鲍姆-加扎内利黑洞\citep{banados1992black}的发现，人们对反德西特时空中的黑洞产生了兴趣，巴纳多斯-泰特尔鲍姆-加扎内利黑洞是具有负宇宙学常数的三维爱因斯坦引力的精确解\citep{cai1999topological}。
+\chapter{渐近反德西特黑洞与弱宇宙监督假设}
+渐近反德西特中的黑洞与渐近平坦和渐近德西特黑洞有很多不同之处，比如在渐近平坦和德西特空间中，四维黑洞的视界拓扑一定是一个球面$S_2$\citep{friedman1993topological}。在反德西特空间，黑洞视界也有可能有着零或者负曲率\citep{cai2004thermodynamics}。因为BTZ黑洞\citep{banados1992black}的发现，人们对渐近反德西特黑洞产生了兴趣，BTZ黑洞是具有负宇宙学常数的三维爱因斯坦引力的精确解\citep{cai1999topological}。
 
 \section{德西特时空和反德西特时空}
 德西特时空和反德西特时空都是最大对称空间，都只有一个时间方向，曲率分别为正和负。可以看作球面和双曲面在赝黎曼时空流形中的推广\citep{陈斌2018广义相对论}。对于$n$维最大对称时空，有
@@ -10,7 +8,7 @@
 \end{equation}
 其中
 \begin{equation}
-    K=\frac{R}{n \left(n-1\right)} \qquad \qquad K g_{\mu \nu}=\frac{R_{\mu \nu}}{n-1}
+    K=\frac{R}{n \left(n-1\right)}
 \end{equation}
 \subsection{常曲率空间}
 一些定义对我们理解常曲率空间是什么非常有必要\citep{梁灿彬2006微分几何入门与广义相对论}：
@@ -23,25 +21,26 @@
         \item $\forall p' \in M', \exists p'$的邻域$O'\subset M'$和开子集$O\subset M$ 以及微分同胚$\phi': O'\rightarrow O$，满足$\phi_*' \left(g'_{\mu \nu} |_{O'}\right)=g_{\mu \nu}| _O$。
     \end{enumerate}
 \end{enumerate}
-很容易证明，流形维数、度规号差及$k$值相同的两个常曲率空间有相同的局域几何，并且常曲率空间有最高对称性\citep{梁灿彬2006微分几何入门与广义相对论}。如此我们可以按照标量曲率$R$来对给定维数和号差的常曲率度规分类。$R=0$的常曲率度规就是平直度规。在$n=4$的洛伦兹号差的前提下，$R>0$和$R<0$的常曲率度规非别为德西特度规和反德西特度规。
+很容易证明，流形维数、度规号差及$K$值相同的两个常曲率空间有相同的局域几何，并且常曲率空间有最高对称性\citep{梁灿彬2006微分几何入门与广义相对论}。如此我们可以按照标量曲率$R$来对给定维数和号差的常曲率度规分类。$R=0$的常曲率度规就是平直度规。在$n=4$的洛伦兹号差的前提下，$R>0$和$R<0$的常曲率度规非别为德西特度规和反德西特度规。
 \subsection{德西特时空}
-通过将$4$维的的西特时空嵌入到一个$5$维的闵氏时空中可以诱导出德西特度规，其为$4$维旋转双曲面$M^4$。参数为$l$的德西特度规可以看为宇宙学常数$\Lambda=3l^{-2}$的真空爱因斯坦方程的解。其中$l>0$为任一正实数。式\eqref{eq: changqulvdugui}中的$K=l^{-2}$。
+通过将$4$维的的德西特时空嵌入到一个$5$维的闵氏时空中可以诱导出德西特度规，其为$4$维旋转双曲面$M^4$。参数为$l$的德西特度规可以看为宇宙学常数$\Lambda=3l^{-2}$的真空爱因斯坦方程的解。其中$l>0$为任一正实数。式\eqref{eq: changqulvdugui}中的$K=l^{-2}$。
 
-德西特时空描绘的宇宙没有大爆炸奇点，宇宙首先收缩到最小值$l$，然后重新膨胀。通过对德西特时空做不同的切片，德西特时空的空间部分可以从正曲率的球，到曲率为零的平坦空间，再到负曲率的双曲面。
+通过对德西特时空做不同的切片，德西特时空的空间部分可以从正曲率的球，到曲率为零的平坦空间，再到负曲率的双曲面。
 
 德西特时空的另一个特点是存在着宇宙事件视界，对于在德西特时空的观测者来说来说，可以传播穿过视界的信号，但是却无法接收到视界以外的信号\citep{witten2001quantum}。虽然德西特时空并非真实的宇宙，但是极早期宇宙的暴涨阶段可以看作德西特时空的一个子时空。此外，如果真实宇宙的暗能量就是宇宙学常数$\Lambda>0$，宇宙将越来越趋近于德西特时空直至永远\citep{梁灿彬2006微分几何入门与广义相对论}。
 \subsection{反德西特时空}
-同样把反德西特时空嵌入高维平坦时空中，可以看作为具有负宇宙学常数的爱因斯坦方程的真空解，球对称形式为
+同样可以把反德西特时空嵌入高维平坦时空中。其看作为具有负宇宙学常数的爱因斯坦方程的真空解，球对称形式为
 \begin{equation}
     ds^2=-\left(1-\frac{\Lambda}{3}r^2\right)dt^2+\left(1-\frac{\Lambda}{3}\right)^{-1}dr^2+r^2d\Omega^2
 \end{equation}
 由于$\Lambda$的取值为负，这个解不存在坐标奇点。
 
 虽然近年来的天文观测表明我们的宇宙有一个小的、整的宇宙学常数$\Lambda$\citep{梁灿彬2006微分几何入门与广义相对论}，但是超引力理论和弦理论的数学进展倾向于相信超引力中的自然“基态”为反德西特时空。尤其是反德西特-共形场论对偶的进展，把反德西特时空中的量子引力与边界上的共形场论联系起来\citep{maldacena1999large,aharony2000large}。
-\section{莱斯纳-努德斯特伦解}
-史瓦西时空描述的为真空静态球对称星体外部的时空，其带电推广为莱斯纳-努德斯特伦时空。相较于史瓦西时空，它存在多个黑洞视界，存在着类时的奇点。
+\section{RN-AdS黑洞}
+\subsection{RN黑洞}
+史瓦西时空描述的为真空静态球对称的时空，其带电推广为莱斯纳-努德斯特伦时空。相较于史瓦西时空，它存在多个黑洞视界，存在着类时的奇点。
 
-带电球对称星体外的作用量可以写为：
+爱因斯坦-麦克斯韦的作用量可以写为：
 \begin{equation}
     S=\frac{1}{16 \pi G_D}\int d^D x \sqrt{-g}\left(R-\frac{g_{0}^2}{4 \pi}F^{\mu \nu}F_{\mu \nu}\right)
 \end{equation}
@@ -57,7 +56,7 @@
 \begin{equation}\label{eq: RNmetric}
      ds^2=-\left(1-\frac{2M}{r}+\frac{Q^2}{r^2}\right)dt^2+\left(1-\frac{2M}{r}+\frac{Q^2}{r^2}\right)^{-1}dr^2+r^2\left(d\theta^2+\sin ^2 \theta d\phi^2\right)
 \end{equation}
-它描述了静态球对称带电荷星体的外部时空，同史瓦西解类似，莱斯纳-努德斯特伦解是爱因斯坦-麦克斯韦理论的唯一球对称解。当$Q=P=0$，既电荷和磁荷都为零时，莱斯纳-努德斯特伦解退化为史瓦西解。
+同史瓦西解类似，莱斯纳-努德斯特伦解是爱因斯坦-麦克斯韦理论的唯一球对称解。当$Q=0$，既电荷为零时，莱斯纳-努德斯特伦解退化为史瓦西解。
 
 如果要描述整个时空的情况，除了$r=0$这一个时空奇性以外，若$1-2M / r+Q^2 / r^2=0$有解，那么还有其他奇性存在。简单求解发现$r$值满足
 \begin{equation}\label{eq: RNhorizon}
@@ -65,12 +64,12 @@
 \end{equation}
 根据解的形式，分三种情况讨论
 \begin{enumerate}
-    \item 若$M^2<Q^2$，此时$r$无实数值，这种情况下莱斯纳-努德斯特伦时空只有一个奇性$r=0$，在此情况下莱斯纳-努德斯特伦黑洞也不能存在；
-    \item 若$M^2>Q^2$，此时除$r=0$以外，$r_{\pm}$也为奇性，它们为坐标奇性\citep{梁灿彬2006微分几何入门与广义相对论}，$r_+$被称为外视界，$r_-$被称为内视界。在外视界$r_+$以外，均有球对称性，存在类时的基灵矢量；
-    \item 若$M^2=Q^2$，此时上述两个奇性合二为一，这种情况被称为极端莱斯纳-努德斯特伦黑洞。第二章所提到的Wald的测试粒子方法\citep{wald1974gedanken}，所采用的就是此种情况下的莱斯纳-努德斯特伦黑洞来验证弱宇宙监督假设。
+    \item 若$M^2<Q^2$，此时$r$无实数值，这种情况下莱斯纳-努德斯特伦时空只有一个奇性$r=0$，在此情况下莱斯纳-努德斯特伦解存在裸奇点；
+    \item 若$M^2>Q^2$，此时除$r=0$以外，$r_{\pm}$也为奇性，它们为坐标奇性\citep{梁灿彬2006微分几何入门与广义相对论}，$r_+$被称为外视界，$r_-$被称为内视界。在外视界$r_+$以外，具有球对称性，存在类时的基灵矢量；
+    \item 若$M^2=Q^2$，此时上述两个奇性合二为一，这种情况被称为极端RN黑洞。第二章所提到的Wald的测试粒子方法\citep{wald1974gedanken}，就是采用此种情况下的RN黑洞来验证弱宇宙监督假设。
 \end{enumerate}
-\subsection{反德西特时空下的莱斯纳-努德斯特伦黑洞}
-式\eqref{eq: RNmetric}给出了零曲率空间下的莱斯纳-努德斯特伦黑洞的度规。在反德西特时空中，莱斯纳-努德斯特伦黑洞的度规为
+\subsection{RN-AdS黑洞}
+式\eqref{eq: RNmetric}给出了渐近平坦下的RN黑洞的度规。在渐近AdS的空间中，RN黑洞的度规为
 \begin{equation}\label{eq: RN-AdSmetric}
     ds^2=-f\left(r\right)dt^2+\frac{1}{f\left(r\right)}dr^2+r^2\left(d\theta^2+\sin^2\phi d\phi ^2\right)
 \end{equation}
@@ -78,17 +77,17 @@
 \begin{equation}\label{eq: RN-AdSinversmetric}
     \left(\frac{\partial }{\partial s}\right)^2=-\frac{1}{f\left(r\right)}\left(\frac{\partial }{\partial t}\right)^2+f\left(r\right)\left(\frac{\partial }{\partial r}\right)^2+\frac{1}{r^2}\left[\left(\frac{\partial }{\partial \theta}\right)^2+\frac{1}{\sin ^2 \phi}\left(\frac{\partial }{\partial \phi}\right)^2\right]
 \end{equation}
-其中$f\left(r\right)$
+其中
 \begin{equation}\label{eq: f(r)}
     f\left(r\right)=1-\frac{2M}{r}+\frac{Q^2}{r^2}+\frac{r^2}{l^2}
 \end{equation}
-其中$l$反德西特半径，它和宇宙学常数的关系为$\Lambda=-3/l^2$，参数$M$和$Q$，可以被理解为黑洞的质量和黑洞携带和电荷。
+$l$为反德西特半径，它和宇宙学常数的关系为$\Lambda=-3/l^2$，参数$M$和$Q$，可以被理解为黑洞的质量和电荷。
 规范势可以写为
 \begin{equation}\label{eq: vectorpotion}
     A=A_t\left(r\right)dt=-\frac{Q}{r}dt
 \end{equation}
 
-采用测试粒子的方法来验证对于反德西特时空下的莱斯纳-努德斯特伦黑洞弱宇宙监督假设是否成立，首先需要根据反德西特时空下的莱斯纳-努德斯特伦黑洞的度规式\eqref{eq: RN-AdSmetric}，来讨论出极端反德西特时空下的莱斯纳-努德斯特伦黑洞的视界半径，此时令$ f(r)=0 $，会发现和常曲率空间下的莱斯纳-努德斯特伦黑洞不同的是，由于$r^2/l^2$这一项的存在，$ f(r)=0 $事实上为四次方程，这将带来四个根的存在。这并不说明反德西特时空下的莱斯纳-努德斯特伦黑洞存在四个视界半径，通过讨论发现，其中两根的值为虚数没有物理意义。反德西特时空下的莱斯纳-努德斯特伦黑洞的视界半径为
+采用测试粒子的方法来验证对于RN-AdS黑洞弱宇宙监督假设是否成立，首先需要根据其度规式\eqref{eq: RN-AdSmetric}，来计算出极端RN-AdS黑洞的视界半径。令$ f(r)=0 $，会发现和渐近平坦的RN黑洞不同的是，由于$r^2/l^2$这一项的存在，$ f(r)=0 $事实上为四次方程，这将带来四个根。这并不说明RN-AdS黑洞存在四个视界，我们通过讨论发现，其中两根的值为虚数没有物理意义，其内外视界半径为
 \begin{align}
     r_+=r + r_* \label{eq: rnr+} \\
     r_-=r-r_* \label{eq: rnr-} 
@@ -98,14 +97,16 @@
     &r = \frac{1}{2} \gamma \\
     &r_* = \frac{1}{2} \sqrt{(\frac{4 l^2
     M}{\gamma}-\gamma^2-\frac{2 l^2}{3})}  \\
-    &\alpha,\ \beta,\ \gamma \text{的值分别为} \\
+  %  &\alpha,\ \beta,\ \gamma \text{的值分别为} \\
+  %  &\alpha =12 l^2 Q^2+l^4 \\ 
+   % &\beta =2 l^6 + 108 l^4 M^2 - 72 l^4 Q^2 \\
+    &\gamma = \sqrt{\frac{\sqrt[3]{\sqrt{\beta^2-4 \alpha^3}+\beta}}{3\sqrt[3]{2}}+\frac{\sqrt[3]{2} \alpha}{3 \sqrt[3]{\sqrt{\beta^2-4\alpha^3}+\beta}}-\frac{2 l^2}{3}} \\
     &\alpha =12 l^2 Q^2+l^4 \\ 
-    &\beta =2 l^6 + 108 l^4 M^2 - 72 l^4 Q^2 \\
-    &\gamma = \sqrt{\frac{\sqrt[3]{\sqrt{\beta^2-4 \alpha^3}+\beta}}{3\sqrt[3]{2}}+\frac{\sqrt[3]{2} \alpha}{3 \sqrt[3]{\sqrt{\beta^2-4\alpha^3}+\beta}}-\frac{2 l^2}{3}} 
+    &\beta =2 l^6 + 108 l^4 M^2 - 72 l^4 Q^2 
 \end{align*}
 
-\subsection{反德西特时空下的莱斯纳-努德斯特伦黑洞存在条件}
-观察解的形式发现，对比零曲率空间下的莱斯纳-努德斯特伦黑洞，得到反德西特时空下的极端莱斯纳-努德斯特伦黑洞为$r_+=r_-$，反德西特时空下的莱斯纳-努德斯特伦黑洞存在条件应为
+\subsection{RN-AdS黑洞存在条件}
+观察解的形式，对比渐近平坦的RN黑洞，得到极端RN-AdS黑洞条件为$r_+=r_-$RN-AdS黑洞存在条件应为
 \begin{equation}\label{eq: rnadsconuneq}
     \beta^2-4\alpha^3 \geq 0
 \end{equation}
@@ -113,45 +114,43 @@
 \begin{equation}\label{eq: rnadscondition}
     M \geq \frac{\sqrt{\delta } (\delta +3) l}{3 \sqrt{6}} \qquad\qquad  \delta= \sqrt{\frac{12 Q^2}{l^2}+1}-1 
 \end{equation}
-还需要式\eqref{eq: rnadscondition}使得式\eqref{eq: suibian}得到满足
+简单计算验证，发现式\eqref{eq: suibian}得到满足。
 \begin{equation}\label{eq: suibian}
     \frac{\sqrt[3]{\sqrt{\beta^2-4 \alpha^3}+\beta}}{3\sqrt[3]{2}}+\frac{\sqrt[3]{2} \alpha}{3 \sqrt[3]{\sqrt{\beta^2-4\alpha^3}+\beta}}-\frac{2 l^2}{3} \geq 0
 \end{equation}
-简单计算验证，发现式\eqref{eq: suibian}得到满足。
 
-以上的讨论是为了获得在反德西特时空下的极端莱斯纳-努德斯特伦黑洞的信息，通过比较前文中零曲率空间下的莱斯纳-努德斯特伦黑洞，我们可以知道反德西特时空下的极端莱斯纳-努德斯特伦黑洞的视界半径，将式\eqref{eq: rnadsconofmass}代入式\eqref{eq: rnr+}和式\eqref{eq: rnr-}
+以上的讨论是为了获得在极端RN-AdS黑洞的信息，通过比较前文中渐近平坦的RN黑洞，我们可以知道极端RN-AdS黑洞的视界半径。
 \begin{equation}\label{eq: rnadsconofmass}
     M=\frac{\sqrt{\delta } (\delta +3) l}{3 \sqrt{6}}
 \end{equation}
-反德西特时空下的极端莱斯纳-努德斯特伦黑洞的视界半径为
+将极端黑洞条件式\eqref{eq: rnadsconofmass}代入式\eqref{eq: rnr+}和式\eqref{eq: rnr-}，得极端RN-AdS黑洞的视界半径为
 \begin{equation}\label{eq: rnadshorizonex}
     r=r_+=r_-=l\sqrt{\frac{\delta}{6}} 
 \end{equation}
-
-尝试创造一个违反式\eqref{eq: rnadscondition}的时空，通过向黑洞中丢入一个满足特殊条件的粒子，可以让式\eqref{eq: rnadscondition}取等号。假设此黑洞捕获了一个有着能量$E$，电荷为$e$，无自旋的粒子。因此，最后的物体具有电荷$\left(e+Q\right)$，质量不大于$\left(m+E\right)$。测试粒子需要满足$e\ll Q$，$E\ll M$的条件。简单计算得出，若末态时空不能保持为反德西特时空下的极端莱斯纳-努德斯特伦时空，那么式\eqref{eq: rnadscondition}成为
+\subsection{测试粒子思想实验}
+现在通过向黑洞中丢入一个满足特殊条件的粒子，尝试创造一个违反式\eqref{eq: rnadscondition}的时空。假设此黑洞捕获了一个有着能量$E$，电荷为$e$，无自旋的粒子。因此，最后的物体具有电荷$\left(e+Q\right)$，质量不大于$\left(m+E\right)$。测试粒子需要满足$e\ll Q$，$E\ll M$的条件。简单计算得出，若末态时空不能保持为极端RN-AdS黑洞，即式\eqref{eq: rnadscondition}成为
 \begin{equation}\label{eq: rnadstestcon}
-    M+E < \frac{\sqrt{\delta } (\delta +3) l}{3 \sqrt{6}} \quad\quad\quad\quad  \delta= \sqrt{\frac{12 \left(Q+e\right)^2}{l^2}+1}-1
+    M+E < \frac{\sqrt{\delta' } (\delta' +3) l}{3 \sqrt{6}} \quad\quad\quad\quad  \delta'= \sqrt{\frac{12 \left(Q+e\right)^2}{l^2}+1}-1
 \end{equation}
-由于$e\ll Q$，$E\ll M$，式\eqref{eq: rnadstestcon}平方，泰勒展开，得到如果测试粒子破坏反德西特时空下的极端莱斯纳-努德斯特伦黑洞$E$需要满足的条件
+由于$e\ll Q$，$E\ll M$，对式\eqref{eq: rnadstestcon}平方，泰勒展开，得到如果测试粒子破坏极端RN-AdS黑洞$E$需要满足的条件
 \begin{equation}\label{eq: rnadsdiscon}
     E < \frac{Q e \left(3+\delta\right)}{3M} \qquad\qquad  \delta= \sqrt{\frac{12 Q^2}{l^2}+1}-1
 \end{equation}
 
 本次思想实验的目标就是，尝试让黑洞捕获一个满足式\eqref{eq: rnadsdiscon}条件的小物体。如此，最终的时空必然会出现违反弱宇宙监督假设的情况\citep{wald1974gedanken}。
-\subsection{测试粒子的轨道}
+
 Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{carter1968global}。有着静止质量$M$和电荷$Q$的带电粒子的运动方程为
 \begin{equation}
     \frac{D^2x^\mu}{D s^2}=\frac{d^2x^\mu}{ds^2}+\Gamma^{\mu}_{\rho\sigma }\frac{dx^\rho}{ds}\frac{dx^\sigma}{ds}=\frac{e}{m}F^{\mu\nu }\frac{dx_\nu}{ds}
 \end{equation}
-粒子的能量$E$和沿对称轴的角动量$L$分量由以下给出
+粒子的守恒能量$E$由下式给出
 \begin{align}
-    -E&=p_t=\frac{\partial \mathcal{L}}{\partial \dot{t}}=Mg_{tt}\frac{dx^t}{ds}+QA_t \\
-    L&=p_\phi=\frac{\partial \mathcal{L}}{\partial \dot{\phi}}=0
+    -E&=p_t=\frac{\partial \mathcal{L}}{\partial \dot{t}}=Mg_{tt}\frac{dx^t}{ds}+QA_t 
 \end{align}
 
-在之前的讨论中，我们现在试图找到一个可以进入反德西特时空下的极端莱斯纳-努德斯特伦黑洞的粒子轨道，并且满足式\eqref{eq: rnadsdiscon}的条件。
+根据之前的讨论，我们现在试图找到一个可以进入极端RN-AdS黑洞的粒子轨道，并且满足式\eqref{eq: rnadsdiscon}的条件。
 
-根据拉格朗日量很容易推出式\eqref{eq: xiaren}，得到
+很容易推出式\eqref{eq: xiaren}，得到
 \begin{equation}\label{eq: xiaren}
     -M^2=g^{tt}\left(-E-eA_t\right)^2+g^{rr}p_r^2+g^{\theta \theta}p_\theta ^2
 \end{equation}
@@ -159,23 +158,24 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
 \begin{equation}\label{eq: rnadsguidao}
     E=-eA_t -\frac{1}{g^{tt}}\sqrt{-M^2g^{tt}+p_r^2-g^{tt}g^{\theta \theta}p_{\theta}^2}
 \end{equation}
-由此，根据时间的方向性，我们得到
+由此，我们得到
 \begin{equation}
     E>-eA_t=\frac{eQ}{r}
 \end{equation}
-此时我们讨论的为反德西特时空下的极端莱斯纳-努德斯特伦黑洞，由式\eqref{eq: rnadshorizonex}和式\eqref{eq: rnadscondition}取等号，得到
+此时我们讨论的为极端RN-AdS黑洞，由式\eqref{eq: rnadshorizonex}和式\eqref{eq: rnadscondition}取等号，得到
 \begin{equation}\label{eq: rnadsinter}
     E> \frac{Qe\left(3+\delta\right)}{3M} \qquad\qquad  \delta= \sqrt{\frac{12 Q^2}{l^2}+1}-1
 \end{equation}
-任何可以进入黑洞的粒子必循满足式\eqref{eq: rnadsinter}，从而式\eqref{eq: rnadsdiscon}被违背。保证了违反弱宇宙监督假设的情况不能获得。
+任何可以进入黑洞的粒子必循满足式\eqref{eq: rnadsinter}，从而式\eqref{eq: rnadsdiscon}不满足。这个结果保证了弱宇宙监督假设不被违反。
 
-\section{双曲黑洞}
-类似于莱斯纳-努德斯特伦黑洞，双曲黑洞也属于克尔-纽曼黑洞中的一员，反德西特时空下的双曲带电黑洞和反德西特时空下的莱斯纳-努德斯特伦黑洞的度规非常相似，见下式\citep{cai1999topological}
+\section{双曲带电黑洞}
+\subsection{双曲黑洞}
+渐近AdS黑洞的视界几何除球面外，还可以是双曲面即双曲黑洞。渐近反德西特下的双曲带电黑洞和RN-AdS黑洞的度规非常相似。考虑以下度规形式\citep{cai1999topological}
 \begin{align}\label{eq: general}
     ds^2=&-\left(k-\frac{8\pi M}{\omega_2 r}+\frac{16 \pi^2 Q^2}{\omega_2^2r^2}+\frac{r^2}{l^2}\right)dt^2 \notag \\
     &+\left(k-\frac{8\pi M}{\omega_2 r}+\frac{16\pi^2 Q^2}{w_2^2 r^2}+\frac{r^2}{l^2}\right)^{-1}dr^2+r^2d\Sigma_2^2
 \end{align}
-其中，$Q$和$M$为黑洞的电荷与质量，$\omega_2$为视界边界超曲面$\Sigma_2$的面积。$d\Sigma_2^2$为曲率为常数$2k$二维超曲面$\Sigma_2$的线元；
+其中，$Q$和$M$为黑洞的电荷与质量，$\omega_2$为视界面超曲面$\Sigma_2$的面积。$d\Sigma_2^2$为曲率为常数$2k$二维超曲面$\Sigma_2$的线元；
 \begin{equation}\label{eqs: differentsituation}
     d\Sigma^2_2=\begin{cases}
         d\theta^2+\sin ^2 \theta d\phi^2 \qquad \text{对于} \quad k=1, \\
@@ -183,20 +183,17 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
         d\theta^2+\sinh ^2 \theta d\phi^2 \qquad \text{对于} \quad k=-1.
     \end{cases}
 \end{equation}
-在式\eqref{eqs: differentsituation}中，使用了事件视界的二维超曲面的常曲率分别为$1$, $0$和$-1$的坐标，这种做法依然保留了一般性。并且在$k=1$的情况下，式\eqref{eq: general}变成了反德西特时空下的莱斯纳-努德斯特伦黑洞，事件视界为$S^2$。视界边界为双曲面$T^2$在$k=-1$的时候，有趣的是即使质量$M$为负数的时候，依然存在视界边界，这种负质量黑洞可以在正常的引力坍缩中形成\citep{mann1997black,smith1997formation}。这种负质量情况会带来很多有意思的情况，但是对于采用测试粒子验证弱宇宙监督假设，我们通过分情况讨论发现，在此情况下不需要特别关注负质量情况。
+在式\eqref{eqs: differentsituation}中，使用了事件视界二维超曲面的常曲率分别为$1$, $0$和$-1$的坐标，这种做法依然保留了一般性。在$k=1$的情况下，式\eqref{eq: general}变成了RN-AdS黑洞，事件视界为$S^2$。在$k=-1$的时候，视界边界为双曲面$T^2$，这种情况即为双曲带电黑洞。有趣的是即使质量$M$为负数的时候，依然存在视界边界，这种负质量黑洞可以在正常的引力坍缩中形成\citep{mann1997black,smith1997formation}。这种负质量情况会带来很多有意思的后果，但是对于采用测试粒子验证弱宇宙监督假设的情形，我们不需要特别关注负质量情况。
 
-\subsection{反德西特时空下的双曲黑洞}
-
-现在考虑反德西特时空下的不带电的双曲黑洞，根据式\eqref{eq: general}其度规为
+现在考虑渐近反德西特下双曲带电黑洞，根据式\eqref{eq: general}其度规为
 \begin{equation}
     ds^2=-f\left(r\right)dt^2+f\left(r\right)^{-1}dr^2+r^2d\Sigma_{2}^2
 \end{equation}
 其中$f\left(r\right)$为
 \begin{align}
-    &f\left(r\right)=-1-\frac{2m}{r}-\frac{\Lambda r^2}{3}+\frac{Q^2}{r^2} \\
-    &\Lambda = -3 l^{-2}
+    &f\left(r\right)=-1-\frac{2m}{r}+\frac{ r^2}{l^2}
 \end{align}
-在Curry的文章中\citep{curry1991vacuum}给出了不带电情况下反德西特时空下的双曲黑洞的视界半径，借助于此我们可以更清楚的了解双曲黑洞带来的负质量情况是如何影响视界半径的，表\ref{tab: hyadswithoutcharge}为Curry给出的视界半径。
+在Curry的文章中\citep{curry1991vacuum}给出了不带电情况下双曲黑洞的视界半径，借助于此我们可以更清楚的了解负质量情况是如何影响视界半径的，表\ref{tab: hyadswithoutcharge}为Curry给出的视界半径。
 其中$a$和$\eta$的定义为\begin{align*}
     &a \equiv \left[-\frac{3m}{\Lambda}+\left(\frac{9m^2}{\Lambda^2}-\frac{k^3}{\Lambda^3}\right)^{1/2}\right]^{1/3} \\
     &\cos \eta =-\frac{3m}{\Lambda}\left(\frac{\Lambda}{k}\right)^{3/2}
@@ -205,7 +202,7 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
 \begin{table}[htb]
     \centering
     \begin{minipage}[t]{0.8\linewidth} % 如果想在表格中使用脚注，minipage是个不错的办法
-    \caption{反德西特时空下的双曲黑洞视界半径} 
+    \caption{双曲黑洞视界半径} 
       \label{tab: hyadswithoutcharge}
       \begin{tabularx}{\linewidth}{lX}
         \toprule[1.5pt]
@@ -225,8 +222,8 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
 
 
 
-\section{反德西特时空下的双曲带电黑洞}
-式\eqref{eq: general}给出了，反德西特时空下的双曲带电黑洞的度规。取$k=-1$后，度规为
+\subsection{双曲带电黑洞}
+双曲带电黑洞的度规。
 \begin{equation}
     ds^2=-f\left(r\right)dt^2+\frac{1}{f\left(r\right)}dr^2+r^2d\Sigma^2_2
 \end{equation}
@@ -242,7 +239,7 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
 \begin{equation}
     A=A_t\left(r\right)dt=-\frac{Q}{r}dt
 \end{equation}
-和反德西特时空下的莱斯纳-努德斯特伦黑洞相似（参见式\eqref{eq: RN-AdSmetric}），参数$m$和$Q$被理解为黑洞的质量参数和电荷参数。经过同样的讨论我们可以得出来反德西特时空下的双曲带电黑洞的视界半径，依然舍去两个虚数的解，保留有物理意义的实数解。
+和RN-AdS黑洞相似（参见式\eqref{eq: RN-AdSmetric}），参数$m$和$Q$被理解为黑洞的质量参数和电荷参数。经过同样的讨论我们可以得出来双曲带电黑洞的视界半径，依然舍去两个虚数的解，保留有物理意义的实数解。
 \begin{align}
     r_+=r + r_* \label{eq: hyr+} \\
     r_-=r-r_* \label{eq: hyr-} 
@@ -252,12 +249,12 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
     r=&\frac{1}{2}\sqrt{-\frac{2}{\Lambda}-\frac{3 \times 2^{\frac{1}{3}}\alpha}{\Lambda \left(\beta+\sqrt{\beta^2-4 (9\alpha)^3} \right)^{\frac{1}{3}}}-\frac{1}{3 \times 2^{\frac{1}{3}}\Lambda}\left(\beta +\sqrt{\beta^2-4 \left(9\alpha\right)^3}\right)^{\frac{1}{3}}} \\
     r_*=&\frac{1}{2}\sqrt{-\frac{12m}{\Lambda \sqrt{-\frac{2}{\Lambda}-\frac{3 \times 2^{\frac{1}{3}} \alpha}{\Lambda \left(\beta+\sqrt{\beta^2 - 4 (9\alpha)^3}\right)^{\frac{1}{3}}}-\frac{1}{3\times 2^{\frac{1}{3}}}\left(\beta+\sqrt{\beta^2-4(9 \alpha)^3}\right)^{\frac{1}{3}}}}} \notag \\
     &\overline{+\frac{3 \times 2^{\frac{1}{3}}\alpha}{\Lambda \left(\beta+\sqrt{\beta^2-4 (9\alpha)^3} \right)^{\frac{1}{3}}}+\frac{1}{3 \times 2^{\frac{1}{3}}\Lambda}\left(\beta +\sqrt{\beta^2-4 \left(9\alpha\right)^3}\right)^{\frac{1}{3}}-\frac{4}{\Lambda}} \\
-    &\alpha,\ \beta,\ \gamma \text{的值分别为} \notag \\
+    \alpha,\ \beta \text{的值分别为}& \notag \\
     \alpha =& 1-4\Lambda  Q^2    \notag \\
     \beta =&-972 \Lambda  m^2-648 \Lambda Q^2-54 \notag 
 \end{align*}
-
-采用与前一节相同的办法，首先找到反德西特时空下的双曲带电黑洞的存在条件，通过让其捕获测试粒子来尝试得到“裸奇点”，从而得到违反弱宇宙监督假设的结果。德西特时空下的双曲带电黑洞的存在条件应为
+\subsection{测试粒子的思想实验}
+我们采用与前一节相同的办法，首先找到反德西特时空下的双曲带电黑洞的存在条件，通过让其捕获测试粒子来尝试得到“裸奇点”。双曲带电黑洞的存在条件应为
 \begin{equation}\label{eq: hycon}
     \beta^2-4 \left(9\alpha\right)^3 \geq 0
 \end{equation}
@@ -266,28 +263,28 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
     m \geq -\frac{1}{12} \Lambda  \sqrt{-\frac{2}{\Lambda }-\frac{2 \sqrt{1-4 \Lambda  Q^2}}{\Lambda }} \left(\frac{4}{\Lambda }-\frac{2 \sqrt{1-4 \Lambda 
     Q^2}}{\Lambda }\right)
 \end{equation}
-如果取$Q=0$会发现此时的结果和表\ref{tab: hyadswithoutcharge}的视界半径一致。把宇宙学常数$\Lambda$换成反德西特半径$l$，这样可以和反德西特时空下的莱斯纳-努德斯特伦黑洞对比。
+如果取$Q=0$会发现此时的结果和表\ref{tab: hyadswithoutcharge}的视界半径一致。把宇宙学常数$\Lambda$换成反德西特半径$l$（以使和RN-AdS黑洞对比）。
 \begin{equation}\label{eq: hyadsconditionreal}
     m\geq \frac{l\left(\delta-3\right)\sqrt{\delta}}{3\sqrt{6}} \qquad \qquad \delta=\sqrt{1+12Q^2/l^2}+1
 \end{equation}
 
-再次情况下，我们也可以得出反德西特空间下极端双曲带电黑洞的视界半径为
+在此情况下，我们也可以得出极端双曲带电黑洞的视界半径为
 \begin{equation}\label{eq: hyadsextramhorizon}
     r=r_+=r_-=\sqrt{\frac{\delta}{6}}l
 \end{equation}
 
-对于反德西特时空下的莱斯纳-努德斯特伦黑洞，此时我们可以计算出黑洞捕获测试粒子后可以使得末态时空被违反的条件式\eqref{eq: rnadsdiscon}，但是考虑到在反德西特空间下双曲带电黑洞的负质量情况令人担忧，因为没有理由要求式\eqref{eq: hyadscondition} $\left(4/\Lambda -2 \sqrt{1-4 \Lambda Q^2}/\Lambda \right)$这一项始终大于零，那么负质量情况的讨论就不可避免，接下来的两节将分别讨论黑洞的质量参数$m$大于零和小于零的两种情况，最后我们发现即使一开始不区分情况讨论，只对过程中不等号的方向有影响，而对最终的结论并无影响。
+对于极端RN-AdS黑洞，此时我们可以计算出捕获测试粒子后可以使得末态时空出现裸奇点的条件式\eqref{eq: rnadsdiscon}，双曲带电黑洞的负质量情况令人担忧，因为没有理由要求式\eqref{eq: hyadscondition} $\left(4/\Lambda -2 \sqrt{1-4 \Lambda Q^2}/\Lambda \right)$这一项始终大于零，那么负质量情况的讨论就不可避免。接下将分别讨论黑洞的质量参数$m$大于零和小于零的两种情况，我们$m$的符号仅影响过程中不等号的方向，而对最终的结论并无影响。
 \subsection{正质量情况}
-此时我们考虑正质量情况，通过向黑洞中丢入一个满足特殊条件的粒子，可以让式\eqref{eq: hyadsconditionreal}取等号。假设此黑洞捕获了一个有着能量$E$，电荷为$e$，无自旋的粒子。因此，最后的物体具有电荷$\left(e+Q\right)$，质量不大于$\left(m+E\right)$。测试粒子需要满足$e\ll Q$，$E\ll m$的条件。简单计算得出，若末态时空不能保持为反德西特时空下的极端双曲黑洞，那么式\eqref{eq: hyadsconditionreal}成为
+考虑向黑洞中丢入一个满足特殊条件的粒子。假设此黑洞捕获了一个有着能量$E$，电荷为$e$，无自旋的粒子。因此，最后的物体具有电荷$\left(e+Q\right)$，质量不大于$\left(m+E\right)$。测试粒子需要满足$e\ll Q$，$E\ll m$的条件。简单计算得出，若末态时空不能保持为极端双曲带电黑洞，那么式\eqref{eq: hyadsconditionreal}成为
 \begin{equation}\label{eq: hyadsputtestparticle}
-    m+E < \frac{\sqrt{\delta } (\delta -3) l}{3 \sqrt{6}} \quad\quad\quad\quad  \delta= \sqrt{\frac{12 \left(Q+e\right)^2}{l^2}+1}+1
+    m+E < \frac{\sqrt{\delta' } (\delta' -3) l}{3 \sqrt{6}} \quad\quad\quad\quad  \delta'= \sqrt{\frac{12 \left(Q+e\right)^2}{l^2}+1}+1
 \end{equation}
-不等式两端平方以后，再取泰勒展开只保留一阶项。那么可以得到
+不等式两端平方以后，再取泰勒展开只保留一阶项,可以得到
 \begin{equation}\label{eq: hyadsdiscon}
     E < \frac{Q e \left(\delta-3\right)}{3 m} \qquad \qquad \delta=\sqrt{1+12Q^2/l^2}+1
 \end{equation}
 
-粒子的轨道根据式\eqref{eq: xiaren}，其方程和式\eqref{eq: xiaren}相同，同样由于$dt/ds>0$，和时间的方向性，我们可以得到
+粒子的轨道仍满足式\eqref{eq: xiaren}，由于$dt/ds>0$，我们可以得到
 \begin{equation}\label{eq: hyadstestcon}
     E>-eA_t=\frac{eQ}{r}
 \end{equation}
@@ -295,11 +292,35 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
 \begin{equation}\label{eq: woshizaibuzhidaogaogeshale}
     E > e\frac{Q}{r}=\frac{Q e \left(\delta-3\right)}{3 m} 
 \end{equation}
-对比式\eqref{eq: woshizaibuzhidaogaogeshale}和式\eqref{eq: hyadsdiscon}，任何可以进入黑洞的粒子就不能满足摧毁黑洞时空的条件，由此弱宇宙监督假设再次得到了保证。
+对比式\eqref{eq: woshizaibuzhidaogaogeshale}和式\eqref{eq: hyadsdiscon}，任何可以进入黑洞的粒子都不能满足摧毁黑洞视界的条件，由此弱宇宙监督假设再次得到了保证。
 \subsection{负质量情况}
-对于负质量情况，首先需要明确的问题为黑洞捕获了测试粒子以后的质量不大于$m+E$，是否依然不大于零。很显然如果大于零的话，$E \ll m$的条件就不能得到满足。第二个为题在于对式\eqref{eq: hyadsputtestparticle}进行平方操作后不等号会反向。但是由于泰勒展开后存在$E m $项，不等号会再次反向。综上所述，在采用测试粒子验证弱宇宙监督假设的情况下，特别考虑负质量问题并无必要。
+对于负质量情况，首先需要明确的问题为黑洞捕获了测试粒子以后的质量不大于$m+E$，是否依然不大于零。很显然如果大于零的话，$E \ll m$的条件就不能得到满足。第二个问题在于对式\eqref{eq: hyadsputtestparticle}进行平方操作后不等号会反向。但是由于泰勒展开后存在$E m $项，不等号会再次反向。综上所述，在采用测试粒子验证弱宇宙监督假设的情况下，负质量情形仍然会得到相同的结论。
+
+\section{四维爱因斯坦-高斯-博尼特引力}
+弦理论的低能有效理论，其中包含了高阶曲率项。洛夫洛克定理认为，爱因斯坦的广义相对论是满足以下条件的唯一的引力理论\citep{lanczos1938remarkable,lovelock1971einstein,lovelock1972four}
+\begin{enumerate}
+    \item 有着$3+1$维时空；
+    \item 微分同胚不变性；
+    \item 度规的协变导数为0（metricity）；
+    \item 运动方程为二阶。
+\end{enumerate}
+
+但是最近Lin和Glavan的一项工作，找到了一个新的四维时空引力理论，被称为“四维爱因斯坦-高斯-博尼特引力（4D Einstein Gauss-Bonnet gravity）”，同样满足了以上的条件\citep{glavan2020einstein}。一般认为四维时空中高斯-博尼特引力是平凡的，但是Lin et al通过使用$\alpha\rightarrow \alpha/\left(D-4\right)$，将四维时空定义为$D\rightarrow 4$，从而在运动方程中消去了$\left(D-4\right)$这一因子。
+\begin{align}
+    \alpha&\rightarrow \alpha/\left(D-4\right) \label{eq: tihuan} \\
+    S=S_{EH}+S_{GB}\left[g_{\mu \nu}\right]&=\int d^Dx\sqrt{-g} \left[\frac{M_P^2}{2}R-\Lambda_0+\frac{\alpha}{D-4}\mathcal{G}\right] \\
+    \frac{g_{\nu \rho}}{\sqrt{-g}}\frac{\delta S_{GB}}{\delta g_{\mu \rho}}&=\frac{\alpha}{D-4} \times \frac{\left(D-2\right)\left(D-3\right)\left(D-4\right)}{2\left(D-1\right)M_P^4}\times \Lambda^2 \delta^\mu_\nu \label{eq: gbgdelta}
+\end{align}
+其中$\mathcal{G}=6R\indices{^{\mu \nu}_{\rho \sigma}}R\indices{^{\rho \sigma}_{\mu \nu}}-4R\indices{^{\mu}_{\nu}}R\indices{^{\nu}_{\mu}}+R^2=6R\indices{^{\mu \nu}_{[\mu \nu}}R\indices{^{\rho \sigma}_{\rho \sigma]}}$
+可以看到通过式\eqref{eq: tihuan}的替换过程，成功得到了式\eqref{eq: gbgdelta}，即GB项对运动方程有非平凡的贡献\footnote{但也有评论称这种方法只是在代数上解决了问题，经不起深入分析并且也不物理。}。
+\subsection{反德西特时空下的带电黑洞}
+即便有一些反对意见，我们依然能讨论在四维时空的高斯-博尼特引力下反德西特时空中带电黑洞是否满足弱宇宙监督假设。Fernandes给出了这种情况下黑洞的视界半径为式\eqref{eq: gbadsrfun}的解\citep{fernandes2020charged}
+\begin{equation}\label{eq: gbadsrfun}
+    1-\frac{2M}{r}+\frac{Q^2+\alpha}{r^2}+\frac{r^2}{l^2}=0
+\end{equation}
+若采用$Q^2+\alpha \rightarrow \tilde{Q}^2 $，将$\tilde{Q}$作为电荷参数，那么此时情况回归RN-AdS黑洞。此时通过式\eqref{eq: rnadsguidao}，我们再次回到了熟悉的RN-AdS黑洞情况。
 
 \section{本章小结}
-本章通过使黑洞捕获一个小物体来创造出一个“裸奇点”的情况，通过测地线方程在并没有真实求解粒子运动轨道的情况下讨论了可以被黑洞捕获小物体的能量和电荷条件，由于静电斥力，可以破坏极端黑洞的粒子都不满足这个条件。
+本章考虑试图使极端黑洞捕获一个测试粒子来创造出一个“裸奇点”的思想实验，通过分析例子运动中的守恒能量，无需具体求解粒子运动轨道的情况下讨论了可以被黑洞捕获的例子的能量和电荷条件，得出由于静电斥力，可以破坏黑洞视界的粒子都不满足这个条件。尽管我们可以任意的接近极端黑洞的情况但永远不能进入，测试粒子总会“错过”黑洞。弱宇宙监督监督假设得到支撑。
 
-尽管我们可以任意的接近极端黑洞的情况但永远不能进入，测试粒子总会“错过”黑洞。
+
