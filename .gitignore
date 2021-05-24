@@ -26,5 +26,4 @@ dist
 *.fdb_latexmk
 *.fls
 *.synctex.gz
-main.pdf
 shuji.pdf
