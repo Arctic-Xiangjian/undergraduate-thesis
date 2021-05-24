@@ -23,9 +23,9 @@
 \end{enumerate}
 很容易证明，流形维数、度规号差及$K$值相同的两个常曲率空间有相同的局域几何，并且常曲率空间有最高对称性\citep{梁灿彬2006微分几何入门与广义相对论}。如此我们可以按照标量曲率$R$来对给定维数和号差的常曲率度规分类。$R=0$的常曲率度规就是平直度规。在$n=4$的洛伦兹号差的前提下，$R>0$和$R<0$的常曲率度规非别为德西特度规和反德西特度规。
 \subsection{德西特时空}
-通过将$4$维的的德西特时空嵌入到一个$5$维的闵氏时空中可以诱导出德西特度规，其为$4$维旋转双曲面$M^4$。参数为$l$的德西特度规可以看为宇宙学常数$\Lambda=3l^{-2}$的真空爱因斯坦方程的解。其中$l>0$为任一正实数。式\eqref{eq: changqulvdugui}中的$K=l^{-2}$。
+通过将$4$维德西特时空嵌入到一个$5$维的时空中可以诱导出德西特度规，其为$4$维旋转双曲面$M^4$。参数为$l$的德西特度规可以看为宇宙学常数$\Lambda=3l^{-2}$的真空爱因斯坦方程的解。其中$l>0$为任一正实数。式\eqref{eq: changqulvdugui}中的$K=l^{-2}$。
 
-通过对德西特时空做不同的切片，德西特时空的空间部分可以从正曲率的球，到曲率为零的平坦空间，再到负曲率的双曲面。
+通过对德西特时空做不同的切片，德西特时空的空间部分正曲率的球，到曲率为零的平坦空间，再到负曲率的双曲面。
 
 德西特时空的另一个特点是存在着宇宙事件视界，对于在德西特时空的观测者来说来说，可以传播穿过视界的信号，但是却无法接收到视界以外的信号\citep{witten2001quantum}。虽然德西特时空并非真实的宇宙，但是极早期宇宙的暴涨阶段可以看作德西特时空的一个子时空。此外，如果真实宇宙的暗能量就是宇宙学常数$\Lambda>0$，宇宙将越来越趋近于德西特时空直至永远\citep{梁灿彬2006微分几何入门与广义相对论}。
 \subsection{反德西特时空}
@@ -170,35 +170,16 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
 
 \section{双曲带电黑洞}
 \subsection{双曲黑洞}
-渐近AdS黑洞的视界几何除球面外，还可以是双曲面即双曲黑洞。渐近反德西特下的双曲带电黑洞和RN-AdS黑洞的度规非常相似。考虑以下度规形式\citep{cai1999topological}
-\begin{align}\label{eq: general}
-    ds^2=&-\left(k-\frac{8\pi M}{\omega_2 r}+\frac{16 \pi^2 Q^2}{\omega_2^2r^2}+\frac{r^2}{l^2}\right)dt^2 \notag \\
-    &+\left(k-\frac{8\pi M}{\omega_2 r}+\frac{16\pi^2 Q^2}{w_2^2 r^2}+\frac{r^2}{l^2}\right)^{-1}dr^2+r^2d\Sigma_2^2
-\end{align}
-其中，$Q$和$M$为黑洞的电荷与质量，$\omega_2$为视界面超曲面$\Sigma_2$的面积。$d\Sigma_2^2$为曲率为常数$2k$二维超曲面$\Sigma_2$的线元；
-\begin{equation}\label{eqs: differentsituation}
-    d\Sigma^2_2=\begin{cases}
-        d\theta^2+\sin ^2 \theta d\phi^2 \qquad \text{对于} \quad k=1, \\
-        d\theta^2+ \theta^2 d\phi^2 \qquad \text{对于} \quad k=0, \\
-        d\theta^2+\sinh ^2 \theta d\phi^2 \qquad \text{对于} \quad k=-1.
-    \end{cases}
-\end{equation}
-在式\eqref{eqs: differentsituation}中，使用了事件视界二维超曲面的常曲率分别为$1$, $0$和$-1$的坐标，这种做法依然保留了一般性。在$k=1$的情况下，式\eqref{eq: general}变成了RN-AdS黑洞，事件视界为$S^2$。在$k=-1$的时候，视界边界为双曲面$T^2$，这种情况即为双曲带电黑洞。有趣的是即使质量$M$为负数的时候，依然存在视界边界，这种负质量黑洞可以在正常的引力坍缩中形成\citep{mann1997black,smith1997formation}。这种负质量情况会带来很多有意思的后果，但是对于采用测试粒子验证弱宇宙监督假设的情形，我们不需要特别关注负质量情况。
-
-现在考虑渐近反德西特下双曲带电黑洞，根据式\eqref{eq: general}其度规为
+双曲黑洞的度规为
 \begin{equation}
     ds^2=-f\left(r\right)dt^2+f\left(r\right)^{-1}dr^2+r^2d\Sigma_{2}^2
 \end{equation}
 其中$f\left(r\right)$为
 \begin{align}
-    &f\left(r\right)=-1-\frac{2m}{r}+\frac{ r^2}{l^2}
+    &f\left(r\right)=-1-\frac{2m}{r}-\frac{\Lambda r^2 }{3}
 \end{align}
-在Curry的文章中\citep{curry1991vacuum}给出了不带电情况下双曲黑洞的视界半径，借助于此我们可以更清楚的了解负质量情况是如何影响视界半径的，表\ref{tab: hyadswithoutcharge}为Curry给出的视界半径。
-其中$a$和$\eta$的定义为\begin{align*}
-    &a \equiv \left[-\frac{3m}{\Lambda}+\left(\frac{9m^2}{\Lambda^2}-\frac{k^3}{\Lambda^3}\right)^{1/2}\right]^{1/3} \\
-    &\cos \eta =-\frac{3m}{\Lambda}\left(\frac{\Lambda}{k}\right)^{3/2}
-\end{align*}
 
+在Curry的文章中\citep{curry1991vacuum}给出了不带电情况下双曲黑洞的视界半径，借助于此我们可以更清楚的了解负质量情况是如何影响视界半径的，表\ref{tab: hyadswithoutcharge}为Curry给出的视界半径。
 \begin{table}[htb]
     \centering
     \begin{minipage}[t]{0.8\linewidth} % 如果想在表格中使用脚注，minipage是个不错的办法
@@ -219,11 +200,28 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
       \end{tabularx}
     \end{minipage}
   \end{table}
+  在Curry的文章中\citep{curry1991vacuum}给出了不带电情况下双曲黑洞的视界半径，借助于此我们可以更清楚的了解负质量情况是如何影响视界半径的，表\ref{tab: hyadswithoutcharge}为Curry给出的视界半径。
+其中$a$和$\eta$的定义为\begin{align*}
+    &a \equiv \left[-\frac{3m}{\Lambda}+\left(\frac{9m^2}{\Lambda^2}-\frac{k^3}{\Lambda^3}\right)^{1/2}\right]^{1/3} \\
+    &\cos \eta =-\frac{3m}{\Lambda}\left(\frac{\Lambda}{k}\right)^{3/2}
+\end{align*}
+\subsection{渐近AdS的双曲带电黑洞}
+渐近AdS黑洞的视界几何除球面外，还可以是双曲面，即双曲黑洞。渐近反德西特下的双曲带电黑洞和RN-AdS黑洞的度规非常相似。考虑以下度规形式\citep{cai1999topological}
+\begin{align}\label{eq: general}
+    ds^2=&-\left(k-\frac{8\pi M}{\omega_2 r}+\frac{16 \pi^2 Q^2}{\omega_2^2r^2}+\frac{r^2}{l^2}\right)dt^2 \notag \\
+    &+\left(k-\frac{8\pi M}{\omega_2 r}+\frac{16\pi^2 Q^2}{w_2^2 r^2}+\frac{r^2}{l^2}\right)^{-1}dr^2+r^2d\Sigma_2^2
+\end{align}
+其中，$Q$和$M$为黑洞的电荷与质量，$\omega_2$为视界面超曲面$\Sigma_2$的面积。$d\Sigma_2^2$为曲率为常数$2k$二维超曲面$\Sigma_2$的线元；
+\begin{equation}\label{eqs: differentsituation}
+    d\Sigma^2_2=\begin{cases}
+        d\theta^2+\sin ^2 \theta d\phi^2 \qquad \text{对于} \quad k=1, \\
+        d\theta^2+ \theta^2 d\phi^2 \qquad \text{对于} \quad k=0, \\
+        d\theta^2+\sinh ^2 \theta d\phi^2 \qquad \text{对于} \quad k=-1.
+    \end{cases}
+\end{equation}
+在式\eqref{eqs: differentsituation}中，使用了事件视界二维超曲面的常曲率分别为$1$, $0$和$-1$的坐标，这种做法依然保留了一般性。在$k=1$的情况下，式\eqref{eq: general}变成了RN-AdS黑洞，事件视界为$S^2$。在$k=-1$的时候，视界边界为双曲面$T^2$，这种情况即为双曲带电黑洞。有趣的是即使质量$M$为负数的时候，依然存在视界边界，这种负质量黑洞可以在正常的引力坍缩中形成\citep{mann1997black,smith1997formation}。这种负质量情况会带来很多有意思的后果，但是对于采用测试粒子验证弱宇宙监督假设的情形，我们不需要特别关注负质量情况。
 
-
-
-\subsection{双曲带电黑洞}
-双曲带电黑洞的度规。
+由式\eqref{eq: general}，双曲带电黑洞的度规。
 \begin{equation}
     ds^2=-f\left(r\right)dt^2+\frac{1}{f\left(r\right)}dr^2+r^2d\Sigma^2_2
 \end{equation}
@@ -231,7 +229,7 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
 \begin{equation}
     \left(\frac{\partial }{\partial s}\right)^2=-\frac{1}{f\left(r\right)}\left(\frac{\partial }{\partial t}\right)^2+f\left(r\right)\left(\frac{\partial }{\partial r}\right)^2+\frac{1}{r^2}\left[\left(\frac{\partial }{\partial \theta}\right)^2+\frac{1}{\sinh ^2 \phi}\left(\frac{\partial }{\partial \phi}\right)^2\right]
 \end{equation}
-其中
+其中$l$为了同Curry的结果对比，依据$\Lambda=-3l^{-2}$，得到$f\left(r\right)$
 \begin{equation}
     f\left(r\right)=-1-\frac{2m}{r}-\frac{\Lambda r^2}{3}+\frac{Q^2}{r^2}
 \end{equation}
@@ -246,10 +244,12 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
 \end{align}
 其中
 \begin{align*}
-    r=&\frac{1}{2}\sqrt{-\frac{2}{\Lambda}-\frac{3 \times 2^{\frac{1}{3}}\alpha}{\Lambda \left(\beta+\sqrt{\beta^2-4 (9\alpha)^3} \right)^{\frac{1}{3}}}-\frac{1}{3 \times 2^{\frac{1}{3}}\Lambda}\left(\beta +\sqrt{\beta^2-4 \left(9\alpha\right)^3}\right)^{\frac{1}{3}}} \\
-    r_*=&\frac{1}{2}\sqrt{-\frac{12m}{\Lambda \sqrt{-\frac{2}{\Lambda}-\frac{3 \times 2^{\frac{1}{3}} \alpha}{\Lambda \left(\beta+\sqrt{\beta^2 - 4 (9\alpha)^3}\right)^{\frac{1}{3}}}-\frac{1}{3\times 2^{\frac{1}{3}}}\left(\beta+\sqrt{\beta^2-4(9 \alpha)^3}\right)^{\frac{1}{3}}}}} \notag \\
-    &\overline{+\frac{3 \times 2^{\frac{1}{3}}\alpha}{\Lambda \left(\beta+\sqrt{\beta^2-4 (9\alpha)^3} \right)^{\frac{1}{3}}}+\frac{1}{3 \times 2^{\frac{1}{3}}\Lambda}\left(\beta +\sqrt{\beta^2-4 \left(9\alpha\right)^3}\right)^{\frac{1}{3}}-\frac{4}{\Lambda}} \\
-    \alpha,\ \beta \text{的值分别为}& \notag \\
+    r=&\frac{1}{2}\sqrt{\gamma} \\
+    r_*=&\frac{1}{2}\sqrt{-\frac{12m}{\Lambda \sqrt{\gamma}}-\gamma-\frac{6}{\Lambda}} \\
+    \gamma =&-\frac{2}{\Lambda}-\frac{3 \times 2^{\frac{1}{3}}\alpha}{\Lambda \left(\beta+\sqrt{\beta^2-4 (9\alpha)^3} \right)^{\frac{1}{3}}}-\frac{1}{3 \times 2^{\frac{1}{3}}\Lambda}\left(\beta +\sqrt{\beta^2-4 \left(9\alpha\right)^3}\right)^{\frac{1}{3}} \notag
+\end{align*}
+其中
+\begin{align*}
     \alpha =& 1-4\Lambda  Q^2    \notag \\
     \beta =&-972 \Lambda  m^2-648 \Lambda Q^2-54 \notag 
 \end{align*}
@@ -306,21 +306,50 @@ Carter非常详尽的研究了在克尔-纽曼几何下的粒子运动\cite{cart
 \end{enumerate}
 
 但是最近Lin和Glavan的一项工作，找到了一个新的四维时空引力理论，被称为“四维爱因斯坦-高斯-博尼特引力（4D Einstein Gauss-Bonnet gravity）”，同样满足了以上的条件\citep{glavan2020einstein}。一般认为四维时空中高斯-博尼特引力是平凡的，但是Lin et al通过使用$\alpha\rightarrow \alpha/\left(D-4\right)$，将四维时空定义为$D\rightarrow 4$，从而在运动方程中消去了$\left(D-4\right)$这一因子。
+
+通常认为，四维爱因斯坦-高斯-博尼特引力有如下特点
+\begin{equation}
+    \frac{g_{\nu \rho}}{\sqrt{-g}}\frac{\delta S_{GB}}{\delta g_{\mu \rho}}=\left(D-4\right)\times \frac{\alpha}{2}\mathcal{G}
+\end{equation}
+其中$\mathcal{G}=6R\indices{^{\mu \nu}_{\rho \sigma}}R\indices{^{\rho \sigma}_{\mu \nu}}-4R\indices{^{\mu}_{\nu}}R\indices{^{\nu}_{\mu}}+R^2=6R\indices{^{\mu \nu}_{[\mu \nu}}R\indices{^{\rho \sigma}_{\rho \sigma]}}$，可以看到由于$\left(D-4\right)$的存在，四维的情况为平凡的。
+
+但是，Lin和Glavan提出一下过程
 \begin{align}
     \alpha&\rightarrow \alpha/\left(D-4\right) \label{eq: tihuan} \\
-    S=S_{EH}+S_{GB}\left[g_{\mu \nu}\right]&=\int d^Dx\sqrt{-g} \left[\frac{M_P^2}{2}R-\Lambda_0+\frac{\alpha}{D-4}\mathcal{G}\right] \\
     \frac{g_{\nu \rho}}{\sqrt{-g}}\frac{\delta S_{GB}}{\delta g_{\mu \rho}}&=\frac{\alpha}{D-4} \times \frac{\left(D-2\right)\left(D-3\right)\left(D-4\right)}{2\left(D-1\right)M_P^4}\times \Lambda^2 \delta^\mu_\nu \label{eq: gbgdelta}
 \end{align}
-其中$\mathcal{G}=6R\indices{^{\mu \nu}_{\rho \sigma}}R\indices{^{\rho \sigma}_{\mu \nu}}-4R\indices{^{\mu}_{\nu}}R\indices{^{\nu}_{\mu}}+R^2=6R\indices{^{\mu \nu}_{[\mu \nu}}R\indices{^{\rho \sigma}_{\rho \sigma]}}$
+
 可以看到通过式\eqref{eq: tihuan}的替换过程，成功得到了式\eqref{eq: gbgdelta}，即GB项对运动方程有非平凡的贡献\footnote{但也有评论称这种方法只是在代数上解决了问题，经不起深入分析并且也不物理。}。
-\subsection{反德西特时空下的带电黑洞}
-即便有一些反对意见，我们依然能讨论在四维时空的高斯-博尼特引力下反德西特时空中带电黑洞是否满足弱宇宙监督假设。Fernandes给出了这种情况下黑洞的视界半径为式\eqref{eq: gbadsrfun}的解\citep{fernandes2020charged}
+\subsection{渐近德西特带电黑洞}
+即便有一些反对意见，我们依然能讨论在四维时空的高斯-博尼特引力下反德西特时空中带电黑洞是否满足弱宇宙监督假设。Fernandes给出了这种情况下黑洞的视界半径为下式的解\citep{fernandes2020charged}
 \begin{equation}\label{eq: gbadsrfun}
     1-\frac{2M}{r}+\frac{Q^2+\alpha}{r^2}+\frac{r^2}{l^2}=0
 \end{equation}
+
 若采用$Q^2+\alpha \rightarrow \tilde{Q}^2 $，将$\tilde{Q}$作为电荷参数，那么此时情况回归RN-AdS黑洞。此时通过式\eqref{eq: rnadsguidao}，我们再次回到了熟悉的RN-AdS黑洞情况。
 
+黑洞的视界半径为
+\begin{align}
+    r_+=r + r_* \label{eq: egbr+} \\
+    r_-=r-r_* \label{eq: egbr-} 
+\end{align}
+其中
+\begin{align*}
+    &r = \frac{1}{2} \gamma \\
+    &r_* = \frac{1}{2} \sqrt{(\frac{4 l^2
+    M}{\gamma}-\gamma^2-\frac{2 l^2}{3})}  \\
+  %  &\alpha,\ \beta,\ \gamma \text{的值分别为} \\
+  %  &\alpha =12 l^2 Q^2+l^4 \\ 
+   % &\beta =2 l^6 + 108 l^4 M^2 - 72 l^4 Q^2 \\
+    &\gamma = \sqrt{\frac{\sqrt[3]{\sqrt{\beta^2-4 \alpha^3}+\beta}}{3\sqrt[3]{2}}+\frac{\sqrt[3]{2} \alpha}{3 \sqrt[3]{\sqrt{\beta^2-4\alpha^3}+\beta}}-\frac{2 l^2}{3}} \\
+    &\alpha =12 l^2 \tilde{Q}^2+l^4 \\ 
+    &\beta =2 l^6 + 108 l^4 M^2 - 72 l^4 \tilde{Q}^2 
+\end{align*}
+
+\subsection{测试粒子的思想实验}
+此时按照RN-AdS黑洞中的过程，最后依然可以得到由于静电斥力的原因，可以摧毁黑洞视界的粒子不能被黑洞捕获。
+
 \section{本章小结}
-本章考虑试图使极端黑洞捕获一个测试粒子来创造出一个“裸奇点”的思想实验，通过分析例子运动中的守恒能量，无需具体求解粒子运动轨道的情况下讨论了可以被黑洞捕获的例子的能量和电荷条件，得出由于静电斥力，可以破坏黑洞视界的粒子都不满足这个条件。尽管我们可以任意的接近极端黑洞的情况但永远不能进入，测试粒子总会“错过”黑洞。弱宇宙监督监督假设得到支撑。
+本章考虑试图使极端黑洞捕获一个测试粒子来创造出一个“裸奇点”的思想实验，通过分析例子运动中的守恒能量，无需具体求解粒子运动轨道的情况下讨论了可以被黑洞捕获的例子的能量和电荷条件。得出，由于满足可以摧毁黑洞视界的粒子，不能被黑洞捕中，其中的物理原因为静电斥力保证了这一过程。尽管我们可以任意的接近极端黑洞的情况，但永远不能破坏这一情况，测试粒子总会“错过”黑洞。弱宇宙监督监督假设得到支撑。
 
 
