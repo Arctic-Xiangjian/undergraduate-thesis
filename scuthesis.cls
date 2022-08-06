@@ -69,8 +69,7 @@
   breaklinks=true,
   colorlinks=false,
   plainpages=false,
-  pdfpagelabels,
-  pdfborder=0 0 0}
+  }
 \RequirePackage{hypernat}
 
 \RequirePackage{geometry}
